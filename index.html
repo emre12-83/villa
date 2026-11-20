@@ -1,0 +1,2679 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Marmara Ereğlisi ve Tekirdağ'da satılık villa, imarlı arsa, tarla ve bahçe ilanları. Ak Gayrimenkul ile portföyleri inceleyin ve danışmanlık alın.">
+  <meta name="keywords" content="Marmara Ereğlisi satılık villa, Tekirdağ satılık villa, Marmara Ereğlisi arsa, imarlı arsa, satılık tarla, Ak Gayrimenkul">
+  <meta name="author" content="Ak Gayrimenkul">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#b91c1c">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:title" content="Ak Gayrimenkul | Marmara Ereğlisi'nde Villa ve Arsa">
+  <meta property="og:description" content="Marmara Ereğlisi ve Tekirdağ'daki villa, arsa, tarla ve bahçe portföylerini keşfedin.">
+  <title>Ak Gayrimenkul | Marmara Ereğlisi Satılık Villa ve Arsa</title>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "RealEstateAgent",
+      "name": "Ak Gayrimenkul",
+      "description": "Marmara Ereğlisi ve Tekirdağ'da villa, arsa, tarla ve bahçe alım satım danışmanlığı.",
+      "email": "emre532@gmail.com",
+      "telephone": ["+90 536 792 59 80", "+90 539 312 70 98"],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Dereağzı Mah. 182. Sokak",
+        "addressLocality": "Marmara Ereğlisi",
+        "addressRegion": "Tekirdağ",
+        "addressCountry": "TR"
+      },
+      "areaServed": ["Marmara Ereğlisi", "Tekirdağ"]
+    }
+  </script>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    html, body {
+      max-width: 100%;
+      overflow-x: hidden;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f1f5f9;
+      color: #1e293b;
+      text-align: center;
+      padding: 82px 0 60px 0;
+    }
+
+    /* 1. AÇILIŞ: Türkiye Odaklı Dünya Animasyonu */
+    #giris-ekrani {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #000000;
+      z-index: 9999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      pointer-events: none;
+      animation: perdeKapat 0.45s ease 2.4s forwards;
+    }
+    @keyframes perdeKapat {
+      to {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+    #dunya {
+      will-change: transform;
+    }
+    #konum-etiket {
+      position: absolute;
+      bottom: 13%;
+      color: #ffffff;
+      background-color: rgba(185, 28, 28, 0.95);
+      padding: 10px 24px;
+      border-radius: 25px;
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      box-shadow: 0 0 20px rgba(239, 68, 68, 0.6);
+      opacity: 0;
+      transition: opacity 0.25s ease;
+    }
+
+    /* Üst Menü */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.97);
+      backdrop-filter: blur(10px);
+      border-bottom: 2px solid #e2e8f0;
+      padding: 6px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      z-index: 1000;
+    }
+    .nav-logo {
+      font-size: 14.5px;
+      font-weight: 900;
+      color: #b91c1c;
+      cursor: pointer;
+      white-space: nowrap;
+      border: 2px solid #b91c1c;
+      padding: 6px 11px;
+      border-radius: 8px;
+      transition: background-color 0.2s ease, color 0.2s ease;
+    }
+    .nav-logo:hover {
+      background-color: #b91c1c;
+      color: #ffffff;
+    }
+    .nav-menu-toggle {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      width: 42px;
+      height: 40px;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      background: #ffffff;
+      color: #0f172a;
+      font-size: 21px;
+      cursor: pointer;
+    }
+    .nav-linkler {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    nav a {
+      color: #0f172a;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 14px;
+      cursor: pointer;
+      padding: 4px 6px;
+      transition: color 0.2s ease;
+    }
+    nav a:hover {
+      color: #b91c1c;
+    }
+    .nav-piyasa {
+      width: 350px;
+      height: 46px;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+
+    /* Atatürk Karşılama Vitrini */
+    .hero-vitrin {
+      position: relative;
+      max-width: 980px;
+      margin: 10px auto 24px auto;
+      background: linear-gradient(180deg, #020305 0%, #080d1a 60%, #1e1111 100%);
+      border-radius: 18px;
+      color: #ffffff;
+      overflow: hidden;
+      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.22);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      text-align: left;
+    }
+    .ataturk-banner-ust {
+      position: relative;
+      width: 100%;
+      height: 175px;
+      overflow: hidden;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    .ataturk-bakis {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 46%;
+    }
+    .ataturk-banner-ust::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 30%;
+      background: linear-gradient(to bottom, rgba(8, 13, 26, 0) 0%, #080d1a 100%);
+    }
+    .basin-etiket-kutu {
+      position: absolute;
+      top: 12px;
+      right: 14px;
+      display: flex;
+      gap: 6px;
+      z-index: 5;
+    }
+    .basin-etiket {
+      background-color: rgba(15, 23, 42, 0.78);
+      color: #f8fafc;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 9px;
+      border-radius: 6px;
+      text-decoration: none;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      transition: background-color 0.2s ease, border-color 0.2s ease;
+    }
+    .basin-etiket:hover {
+      background-color: #b91c1c;
+      border-color: #ef4444;
+    }
+    .hero-icerik-alt {
+      padding: 22px 32px 30px 32px;
+      position: relative;
+      z-index: 2;
+    }
+    .hero-rozet {
+      display: inline-block;
+      background-color: rgba(220, 38, 38, 0.25);
+      border: 1px solid #ef4444;
+      color: #fca5a5;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      padding: 5px 12px;
+      border-radius: 20px;
+      margin-bottom: 10px;
+    }
+    .hero-vitrin h1 {
+      color: #ffffff;
+      font-size: 26px;
+      margin: 0 0 10px 0;
+      line-height: 1.25;
+    }
+    .hero-vitrin p {
+      color: #cbd5e1;
+      font-size: 14.5px;
+      line-height: 1.55;
+      margin: 0 0 18px 0;
+      max-width: 680px;
+    }
+    .hero-butonlar {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    /* Otomatik Kayan İkna Kutusu & Mini Haber Kartları */
+    .bilgi-vitrin-alan {
+      max-width: 980px;
+      margin: 0 auto 32px auto;
+      display: flex;
+      gap: 18px;
+      align-items: stretch;
+      text-align: left;
+      padding: 0 16px;
+    }
+    .ikna-slider-kutu {
+      flex: 1.25;
+      background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+      border-radius: 16px;
+      padding: 22px 24px;
+      border: 1px solid #e2e8f0;
+      border-left: 5px solid #b91c1c;
+      box-shadow: 0 6px 20px rgba(15, 23, 42, 0.06);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 175px;
+    }
+    .ikna-ust-etiket {
+      font-size: 11.5px;
+      font-weight: 800;
+      color: #b91c1c;
+      letter-spacing: 0.8px;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    #ikna-yazi-alan {
+      transition: opacity 0.45s ease;
+    }
+    #ikna-baslik {
+      font-size: 18px;
+      font-weight: 800;
+      color: #0f172a;
+      margin: 0 0 6px 0;
+    }
+    #ikna-aciklama {
+      font-size: 13.8px;
+      color: #475569;
+      line-height: 1.55;
+      margin: 0;
+    }
+    .ikna-noktalar {
+      display: flex;
+      gap: 7px;
+      margin-top: 14px;
+    }
+    .ikna-nokta {
+      width: 24px;
+      height: 5px;
+      border-radius: 4px;
+      background-color: #cbd5e1;
+      cursor: pointer;
+      transition: background-color 0.3s ease, width 0.3s ease;
+    }
+    .ikna-nokta.aktif {
+      background-color: #b91c1c;
+      width: 38px;
+    }
+
+    .haber-kartlar-kutu {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .mini-haber-kart {
+      background-color: #ffffff;
+      border-radius: 14px;
+      padding: 12px;
+      border: 1px solid #e2e8f0;
+      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.05);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      cursor: pointer;
+      transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+    .mini-haber-kart:hover {
+      transform: translateX(4px);
+      border-color: #b91c1c;
+      box-shadow: 0 8px 20px rgba(185, 28, 28, 0.12);
+    }
+    .mini-haber-resim {
+      width: 68px;
+      height: 68px;
+      border-radius: 10px;
+      object-fit: cover;
+      flex-shrink: 0;
+      background-color: #e2e8f0;
+    }
+    .mini-haber-icerik {
+      flex: 1;
+    }
+    .mini-haber-rozet {
+      font-size: 10px;
+      font-weight: 800;
+      color: #0369a1;
+      background-color: #e0f2fe;
+      padding: 2px 7px;
+      border-radius: 4px;
+      display: inline-block;
+      margin-bottom: 4px;
+    }
+    .mini-haber-baslik {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: #0f172a;
+      margin: 0 0 4px 0;
+      line-height: 1.3;
+    }
+    .mini-haber-tikla {
+      font-size: 11.5px;
+      font-weight: 800;
+      color: #b91c1c;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    /* Makale Okuma Penceresi (Modal) */
+    #makale-modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(15, 23, 42, 0.72);
+      z-index: 3000;
+      justify-content: center;
+      align-items: center;
+      padding: 16px;
+    }
+    .makale-pencere {
+      background-color: #ffffff;
+      max-width: 600px;
+      width: 100%;
+      border-radius: 18px;
+      overflow: hidden;
+      text-align: left;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+      animation: modalAcil 0.25s ease;
+    }
+    @keyframes modalAcil {
+      from { transform: scale(0.94); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+    .makale-ust-gorsel {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+      display: block;
+    }
+    .makale-govde {
+      padding: 24px;
+    }
+    .makale-govde h2 {
+      margin: 6px 0 12px 0;
+      color: #0f172a;
+      font-size: 21px;
+    }
+    .makale-govde p {
+      color: #334155;
+      font-size: 14.5px;
+      line-height: 1.65;
+      margin: 0 0 14px 0;
+    }
+
+    /* Butonlar */
+    .btn-kirmizi {
+      background-color: #b91c1c;
+      color: #ffffff;
+      padding: 11px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 14px;
+      cursor: pointer;
+      border: none;
+      display: inline-block;
+      transition: background-color 0.2s ease;
+    }
+    .btn-kirmizi:hover {
+      background-color: #991b1b;
+    }
+    .btn-seffaf {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: #ffffff;
+      padding: 11px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 14px;
+      cursor: pointer;
+      display: inline-block;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+    }
+    .btn-seffaf:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+
+    /* Bölüm Başlıkları */
+    .bolum-baslik {
+      color: #0f172a;
+      font-size: 24px;
+      margin: 10px 0 6px 0;
+    }
+    .bolum-alt {
+      color: #64748b;
+      font-size: 14px;
+      margin: 0 0 24px 0;
+    }
+
+    /* 3'lü Yan Yana Sığan İlan Kartları */
+    .ilan-izgara {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 18px;
+      max-width: 980px;
+      margin: 0 auto 30px auto;
+      padding: 0 16px;
+    }
+    .ilan-kart {
+      background-color: #ffffff;
+      width: 295px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 14px rgba(15, 23, 42, 0.07);
+      border: 1px solid #e2e8f0;
+      text-align: left;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      display: flex;
+      flex-direction: column;
+    }
+    .ilan-kart:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 10px 22px rgba(15, 23, 42, 0.13);
+      border-color: #cbd5e1;
+    }
+    .ilan-kart-gorsel-kutu {
+      position: relative;
+      width: 100%;
+      height: 170px;
+      background-color: #cbd5e1;
+    }
+    .ilan-kart-gorsel-kutu img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .foto-sayi-rozet {
+      position: absolute;
+      bottom: 8px;
+      right: 8px;
+      background-color: rgba(15, 23, 42, 0.8);
+      color: #ffffff;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 3px 8px;
+      border-radius: 6px;
+    }
+    .ilan-icerik {
+      padding: 15px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .ilan-etiket {
+      display: inline-block;
+      background-color: #fef2f2;
+      color: #b91c1c;
+      border: 1px solid #fecaca;
+      font-size: 10.5px;
+      font-weight: 700;
+      padding: 3px 9px;
+      border-radius: 6px;
+      margin-bottom: 8px;
+    }
+    .ilan-baslik {
+      font-size: 16px;
+      font-weight: 700;
+      color: #0f172a;
+      margin: 0 0 6px 0;
+    }
+    .ilan-detay {
+      font-size: 13px;
+      color: #475569;
+      margin: 0 0 12px 0;
+      line-height: 1.4;
+    }
+    .ilan-alt-satir {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid #f1f5f9;
+      padding-top: 10px;
+    }
+    .ilan-fiyat {
+      font-size: 16.5px;
+      font-weight: 800;
+      color: #b91c1c;
+      margin: 0;
+    }
+    .ilan-detay-link {
+      font-size: 12.5px;
+      font-weight: 700;
+      color: #0f172a;
+    }
+    .ilan-kart:hover .ilan-detay-link {
+      color: #b91c1c;
+    }
+    .ana-portfoy-duzeni {
+      max-width: 1160px;
+      margin: 0 auto 30px;
+      padding: 0 16px;
+      display: grid;
+      grid-template-columns: 250px minmax(0, 1fr);
+      gap: 24px;
+      align-items: start;
+      text-align: left;
+    }
+    .ana-filtre {
+      position: sticky;
+      top: 78px;
+      padding: 20px;
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-top: 4px solid #b91c1c;
+      border-radius: 14px;
+      box-shadow: 0 5px 18px rgba(15, 23, 42, 0.07);
+      text-align: left;
+    }
+    .ana-filtre h2 {
+      margin: 0 0 5px;
+      font-size: 19px;
+      color: #0f172a;
+    }
+    .ana-filtre > p {
+      margin: 0 0 16px;
+      color: #64748b;
+      font-size: 13px;
+      line-height: 1.45;
+    }
+    .ana-portfoy-icerik { min-width: 0; }
+    .ana-portfoy-icerik .bolum-baslik,
+    .ana-portfoy-icerik .bolum-alt { padding: 0; }
+    .ana-portfoy-icerik .ilan-izgara {
+      max-width: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+    .ana-portfoy-icerik .ilan-kart { width: 100%; }
+    #ana-filtre-durum {
+      min-height: 1.3em;
+      margin: 12px 0 0;
+      color: #b91c1c;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    /* Diğer Sayfalar */
+    .gizli-sayfa {
+      display: none;
+      max-width: 980px;
+      margin: 10px auto;
+      padding: 0 16px;
+    }
+    .admin-panel-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+      gap: 18px;
+      text-align: left;
+    }
+    .admin-yerel-uyari {
+      margin: 0 0 16px;
+      padding: 12px 14px;
+      border: 1px solid #fcd34d;
+      border-radius: 10px;
+      background: #fffbeb;
+      color: #854d0e;
+      font-size: 13px;
+      line-height: 1.5;
+      text-align: left;
+    }
+    #yerel-veri-hatasi {
+      display: none;
+      position: fixed;
+      top: 72px;
+      left: 12px;
+      right: 12px;
+      z-index: 4000;
+      padding: 12px;
+      border-radius: 8px;
+      background: #991b1b;
+      color: #ffffff;
+      text-align: left;
+    }
+
+    /* İlan Detay & Çoklu Fotoğraf Galerisi */
+    .detay-kutu {
+      background-color: #ffffff;
+      border-radius: 16px;
+      padding: 26px;
+      box-shadow: 0 8px 25px rgba(15, 23, 42, 0.08);
+      border: 1px solid #e2e8f0;
+      text-align: left;
+      margin-bottom: 24px;
+    }
+    .detay-ust {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+    .detay-sol-galeri {
+      width: 100%;
+      max-width: 440px;
+    }
+    .detay-ana-resim-kutu {
+      position: relative;
+      width: 100%;
+      height: 300px;
+      border-radius: 12px;
+      overflow: hidden;
+      border: 1px solid #e2e8f0;
+      background-color: #1e293b;
+    }
+    .detay-gorsel {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .galeri-ok {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(15, 23, 42, 0.72);
+      color: #ffffff;
+      border: none;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      font-size: 18px;
+      font-weight: bold;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .galeri-ok:hover {
+      background-color: #b91c1c;
+    }
+    .galeri-ok-sol { left: 10px; }
+    .galeri-ok-sag { right: 10px; }
+    .galeri-sayac {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      background-color: rgba(15, 23, 42, 0.82);
+      color: #ffffff;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 12px;
+    }
+    .galeri-kucukler {
+      display: flex;
+      gap: 7px;
+      flex-wrap: wrap;
+      margin-top: 10px;
+      max-height: 125px;
+      overflow-y: auto;
+      padding: 2px;
+    }
+    .galeri-thumb {
+      width: 58px;
+      height: 44px;
+      object-fit: cover;
+      border-radius: 6px;
+      cursor: pointer;
+      border: 2px solid transparent;
+      opacity: 0.72;
+      transition: all 0.15s ease;
+    }
+    .galeri-thumb:hover, .galeri-thumb.aktif {
+      border-color: #b91c1c;
+      opacity: 1;
+      transform: scale(1.04);
+    }
+    .detay-bilgi {
+      flex: 1;
+      min-width: 280px;
+    }
+    .detay-ozellik-tablo {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 14px 0 18px 0;
+      font-size: 14px;
+    }
+    .detay-ozellik-tablo td {
+      padding: 8px 10px;
+      border-bottom: 1px solid #f1f5f9;
+    }
+    .detay-ozellik-tablo td:first-child {
+      font-weight: 700;
+      color: #64748b;
+      width: 38%;
+    }
+    .detay-harita-alan {
+      margin-top: 24px;
+      padding-top: 20px;
+      border-top: 2px solid #f1f5f9;
+    }
+
+    /* Akıllı Filtreleme Sayfası */
+    .filtre-duzeni {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      text-align: left;
+      margin-top: 20px;
+    }
+    .filtre-sol {
+      width: 290px;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 14px;
+      border: 1px solid #e2e8f0;
+      border-top: 4px solid #b91c1c;
+      box-shadow: 0 4px 15px rgba(15, 23, 42, 0.06);
+      flex-shrink: 0;
+    }
+    .filtre-sag {
+      flex: 1;
+    }
+    .filtre-sonuc-izgara {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    /* Hakkımızda & İletişim */
+    .hakkimizda-kutu {
+      max-width: 650px;
+      margin: 20px auto;
+      background-color: #ffffff;
+      padding: 36px 28px;
+      border-radius: 16px;
+      box-shadow: 0 8px 25px rgba(15, 23, 42, 0.08);
+      border-top: 4px solid #b91c1c;
+      line-height: 1.6;
+    }
+    #iletisim-sayfasi {
+      display: none;
+      max-width: 980px;
+      margin: 15px auto;
+      text-align: left;
+      padding: 0 16px;
+    }
+    .iletisim-baslik-alan {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+    .iletisim-izgara {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      align-items: stretch;
+    }
+    .iletisim-sol, .iletisim-sag {
+      background-color: #ffffff;
+      border-radius: 16px;
+      padding: 28px;
+      box-shadow: 0 6px 22px rgba(15, 23, 42, 0.07);
+      border: 1px solid #e2e8f0;
+    }
+    .iletisim-sol {
+      flex: 1;
+      min-width: 290px;
+      border-top: 4px solid #b91c1c;
+    }
+    .iletisim-sag {
+      flex: 1.2;
+      min-width: 300px;
+      border-top: 4px solid #0f172a;
+    }
+    .iletisim-kart-satir {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 14px;
+      background-color: #f8fafc;
+      border-radius: 10px;
+      margin-bottom: 12px;
+      border: 1px solid #e2e8f0;
+    }
+    .iletisim-kart-satir strong {
+      display: block;
+      font-size: 12px;
+      color: #64748b;
+    }
+    .iletisim-kart-satir a, .iletisim-kart-satir span {
+      font-size: 15px;
+      font-weight: 700;
+      color: #0f172a;
+      text-decoration: none;
+    }
+    .iletisim-kart-satir a:hover {
+      color: #b91c1c;
+    }
+    .whatsapp-btn {
+      display: block;
+      width: 100%;
+      text-align: center;
+      background-color: #16a34a;
+      color: #ffffff;
+      padding: 13px;
+      border-radius: 10px;
+      font-weight: 700;
+      text-decoration: none;
+      margin-top: 14px;
+    }
+    .whatsapp-btn:hover {
+      background-color: #15803d;
+    }
+
+    /* Form Elemanları */
+    .form-grup {
+      margin-bottom: 14px;
+    }
+    .form-grup label {
+      display: block;
+      font-size: 13px;
+      font-weight: 700;
+      color: #334155;
+      margin-bottom: 5px;
+    }
+    .form-grup input, .form-grup select, .form-grup textarea {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 14px;
+      background-color: #f8fafc;
+    }
+    .form-grup input:focus, .form-grup select:focus, .form-grup textarea:focus {
+      outline: none;
+      border-color: #b91c1c;
+      background-color: #ffffff;
+    }
+    #form-bilgi {
+      display: none;
+      margin-top: 12px;
+      padding: 10px;
+      background-color: #dcfce7;
+      color: #166534;
+      border-radius: 8px;
+      font-size: 13.5px;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    /* Müşteri Canlı Mesajlaşma & Hazır Öneriler */
+    #canli-sohbet-tetik {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #b91c1c;
+      color: #ffffff;
+      border: none;
+      border-radius: 50px;
+      padding: 13px 20px;
+      font-size: 14px;
+      font-weight: 800;
+      box-shadow: 0 8px 24px rgba(185, 28, 28, 0.4);
+      cursor: pointer;
+      z-index: 2500;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    #canli-sohbet-tetik:hover {
+      background-color: #991b1b;
+    }
+    #canli-sohbet-pencere {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 360px;
+      max-width: calc(100vw - 32px);
+      background-color: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 15px 40px rgba(15, 23, 42, 0.28);
+      border: 1px solid #cbd5e1;
+      z-index: 2600;
+      overflow: hidden;
+      text-align: left;
+      flex-direction: column;
+    }
+    .sohbet-baslik {
+      background: linear-gradient(135deg, #0f172a 0%, #b91c1c 100%);
+      color: #ffffff;
+      padding: 14px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .sohbet-ilan-etiket {
+      background-color: #fef2f2;
+      color: #991b1b;
+      font-size: 11.5px;
+      font-weight: 700;
+      padding: 7px 14px;
+      border-bottom: 1px solid #fecaca;
+    }
+    #sohbet-mesajlar {
+      height: 210px;
+      overflow-y: auto;
+      padding: 14px;
+      background-color: #f8fafc;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .mesaj-balon {
+      max-width: 85%;
+      padding: 9px 13px;
+      border-radius: 12px;
+      font-size: 13px;
+      line-height: 1.45;
+    }
+    .mesaj-admin {
+      background-color: #ffffff;
+      color: #1e293b;
+      border: 1px solid #e2e8f0;
+      align-self: flex-start;
+      border-bottom-left-radius: 2px;
+    }
+    .mesaj-musteri {
+      background-color: #b91c1c;
+      color: #ffffff;
+      align-self: flex-end;
+      border-bottom-right-radius: 2px;
+    }
+    .oneri-bolum {
+      padding: 10px 12px;
+      background-color: #ffffff;
+      border-top: 1px solid #e2e8f0;
+    }
+    .oneri-baslik {
+      font-size: 11px;
+      font-weight: 700;
+      color: #64748b;
+      margin-bottom: 6px;
+      display: block;
+    }
+    #hizli-oneriler {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      max-height: 82px;
+      overflow-y: auto;
+    }
+    .oneri-chip {
+      background-color: #f1f5f9;
+      color: #0f172a;
+      border: 1px solid #cbd5e1;
+      border-radius: 20px;
+      padding: 5px 11px;
+      font-size: 11.5px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .oneri-chip:hover {
+      background-color: #fee2e2;
+      border-color: #b91c1c;
+      color: #b91c1c;
+    }
+    .sohbet-alt-giris {
+      display: flex;
+      border-top: 1px solid #e2e8f0;
+      padding: 8px;
+      gap: 6px;
+      background-color: #ffffff;
+    }
+    .sohbet-alt-giris input {
+      flex: 1;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      padding: 8px 10px;
+      font-size: 13px;
+    }
+    .sohbet-alt-giris button {
+      background-color: #b91c1c;
+      color: #ffffff;
+      border: none;
+      border-radius: 8px;
+      padding: 0 14px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    @media (max-width: 880px) {
+      body { padding-top: 150px; }
+      nav { flex-wrap: wrap; justify-content: center; }
+      .nav-piyasa { width: 100%; max-width: 380px; }
+      .bilgi-vitrin-alan { flex-direction: column; }
+      .ana-portfoy-duzeni { grid-template-columns: 1fr; gap: 18px; }
+      .ana-filtre { position: static; }
+      .filtre-duzeni { flex-direction: column; }
+      .filtre-sol { width: 100%; }
+      .hero-icerik-alt { padding: 20px; text-align: center; }
+      .hero-butonlar { justify-content: center; }
+      .ataturk-banner-ust { height: 125px; }
+    }
+
+    @media (max-width: 640px) {
+      body { padding: 66px 0 36px; }
+      #ana-sayfa { display: flex; flex-direction: column; }
+      #ana-sayfa .hero-vitrin { order: 1; }
+      #ana-sayfa .ana-portfoy-duzeni { order: 2; }
+      #ana-sayfa .bilgi-vitrin-alan { order: 3; }
+      nav {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 0 10px;
+        padding: 7px 12px;
+      }
+      .nav-logo {
+        justify-self: start;
+        font-size: 13px;
+        padding: 6px 9px;
+      }
+      .nav-menu-toggle { display: flex; }
+      .nav-linkler {
+        display: none;
+        grid-column: 1 / -1;
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        padding-top: 7px;
+      }
+      nav.menu-acik .nav-linkler { display: flex; }
+      nav a {
+        padding: 10px 8px;
+        border-top: 1px solid #e2e8f0;
+        text-align: left;
+      }
+      .nav-piyasa { display: none; }
+      .hero-vitrin {
+        margin: 10px 12px 20px;
+        border-radius: 14px;
+      }
+      .ataturk-banner-ust { height: 74px; }
+      .hero-icerik-alt { padding: 13px 14px 15px; }
+      .hero-rozet { margin-bottom: 6px; padding: 4px 9px; }
+      .hero-vitrin h1 { margin-bottom: 7px; font-size: clamp(19px, 5.5vw, 23px); }
+      .hero-vitrin p { margin-bottom: 11px; font-size: 12.5px; line-height: 1.4; }
+      .hero-butonlar { gap: 8px; }
+      .hero-butonlar a { flex: 1 1 135px; padding: 9px 10px; font-size: 12px; }
+      .basin-etiket-kutu { top: 8px; right: 8px; gap: 4px; }
+      .basin-etiket { padding: 4px 6px; font-size: 10px; }
+      .bilgi-vitrin-alan {
+        margin: 0 12px 24px;
+        padding: 0;
+        gap: 0;
+      }
+      .ikna-slider-kutu { display: none; }
+      .haber-kartlar-kutu { gap: 8px; }
+      .mini-haber-kart { padding: 8px; gap: 8px; }
+      .mini-haber-kart:nth-child(n + 2) { display: none; }
+      .mini-haber-resim { width: 44px; height: 44px; border-radius: 7px; }
+      .mini-haber-baslik { margin: 0; font-size: 11px; }
+      .mini-haber-rozet { margin-bottom: 2px; font-size: 9px; }
+      .mini-haber-tikla { display: none; }
+      .bolum-baslik { font-size: 20px; padding: 0 12px; }
+      .bolum-alt { padding: 0 14px; margin-bottom: 16px; }
+      .ana-filtre { display: none; }
+      .ana-portfoy-duzeni {
+        display: block;
+        margin-bottom: 16px;
+        padding: 0 12px;
+      }
+      .ana-portfoy-icerik .ilan-izgara {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 12px;
+      }
+      .ilan-izgara {
+        gap: 12px;
+        padding: 0 12px;
+      }
+      .ilan-kart { width: 100%; max-width: 420px; }
+      .gizli-sayfa {
+        margin: 10px auto;
+        padding: 0 12px;
+      }
+      .admin-panel-grid { grid-template-columns: minmax(0, 1fr); }
+      .detay-kutu { padding: 14px; }
+      .detay-ust { gap: 16px; }
+      .detay-bilgi { min-width: 0; }
+      .detay-ana-resim-kutu {
+        height: min(68vw, 300px);
+        min-height: 200px;
+      }
+      .detay-ozellik-tablo { table-layout: fixed; font-size: 12px; }
+      .detay-ozellik-tablo td {
+        padding: 7px 4px;
+        overflow-wrap: anywhere;
+      }
+      .detay-ozellik-tablo td:first-child { width: 40%; }
+      .detay-harita-alan iframe { height: 240px; }
+      .filtre-duzeni { gap: 14px; }
+      .filtre-sol { padding: 16px; }
+      #iletisim-sayfasi { padding: 0 12px; }
+      .iletisim-izgara { gap: 14px; }
+      .iletisim-sol, .iletisim-sag { min-width: 0; padding: 17px; }
+      .iletisim-kart-satir { padding: 10px; }
+      .iletisim-kart-satir a, .iletisim-kart-satir span { font-size: 14px; }
+      .hakkimizda-kutu { padding: 24px 16px; }
+      #makale-modal {
+        align-items: flex-start;
+        overflow-y: auto;
+        padding: 12px;
+      }
+      .makale-pencere {
+        max-height: calc(100vh - 24px);
+        overflow-y: auto;
+        margin: auto 0;
+      }
+      .makale-ust-gorsel { height: 150px; }
+      .makale-govde { padding: 17px; }
+      #canli-sohbet-tetik {
+        right: 12px;
+        bottom: 12px;
+        padding: 11px 15px;
+        font-size: 13px;
+      }
+      #canli-sohbet-pencere {
+        right: 12px;
+        bottom: 12px;
+        max-height: calc(100vh - 24px);
+      }
+    }
+
+    @media (max-width: 380px) {
+      .nav-logo { font-size: 12px; }
+      .basin-etiket-kutu { display: none; }
+      .hero-rozet { font-size: 9px; letter-spacing: 1px; }
+      .mini-haber-rozet { font-size: 9px; }
+      .detay-kutu { padding: 10px; }
+      .iletisim-sol, .iletisim-sag { padding: 14px; }
+    }
+  </style>
+</head>
+<body>
+  <div id="yerel-veri-hatasi" role="alert"></div>
+
+  <!-- 1. AÇILIŞ: Türkiye Odaklı Dünya Animasyonu -->
+  <div id="giris-ekrani">
+    <canvas id="dunya"></canvas>
+    <div id="konum-etiket">📍 TÜRKİYE • TEKİRDAĞ • MARMARA EREĞLİSİ</div>
+  </div>
+
+  <!-- Üst Menü -->
+  <nav aria-label="Ana menü">
+    <div class="nav-logo" onclick="filtreSayfasiniAc()">🏛️ AK GAYRİMENKUL</div>
+    <button class="nav-menu-toggle" type="button" aria-label="Menüyü aç" aria-expanded="false" aria-controls="nav-linkler" onclick="mobilMenuDegistir()">☰</button>
+    <div class="nav-linkler" id="nav-linkler">
+      <a onclick="sayfaGoster('ana-sayfa')">Ana Sayfa</a>
+      <a onclick="sayfaGoster('villalar-sayfasi')">Satılık Villalar</a>
+      <a onclick="sayfaGoster('arsalar-sayfasi')">Arsa & Tarla</a>
+      <a onclick="sayfaGoster('hakkimizda-sayfasi')">Hakkımızda</a>
+      <a onclick="sayfaGoster('iletisim-sayfasi')">İletişim</a>
+    </div>
+    <div class="nav-piyasa">
+      <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+        {
+          "symbols": [
+            { "proName": "FX_IDC:USDTRY", "title": "Dolar" },
+            { "proName": "FX_IDC:EURTRY", "title": "Euro" },
+            { "proName": "FX_IDC:XAUTRYG", "title": "Gram Altın" },
+            { "proName": "BIST:XU100", "title": "BIST 100" }
+          ],
+          "showSymbolLogo": false,
+          "isTransparent": true,
+          "displayMode": "compact",
+          "colorTheme": "light",
+          "locale": "tr"
+        }
+        </script>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 1. ANA SAYFA -->
+  <div id="ana-sayfa">
+    <div class="hero-vitrin">
+      <div class="ataturk-banner-ust">
+        <img class="ataturk-bakis" src="ataturk-web.jpg" alt="Mustafa Kemal Atatürk görseli" fetchpriority="high" onerror="this.style.display='none'">
+        <div class="basin-etiket-kutu">
+          <a class="basin-etiket" href="https://www.cumhuriyet.com.tr" target="_blank" rel="noopener">Cumhuriyet</a>
+          <a class="basin-etiket" href="https://www.milliyet.com.tr" target="_blank" rel="noopener">Milliyet</a>
+          <a class="basin-etiket" href="https://www.sabah.com.tr" target="_blank" rel="noopener">Sabah</a>
+        </div>
+      </div>
+      <div class="hero-icerik-alt">
+        <span class="hero-rozet">AK GAYRİMENKUL • MARMARA EREĞLİSİ</span>
+        <h1 id="site-hero-baslik">Trakya’nın İncisinde Geleceğinize Değer Katan Yatırımlar</h1>
+        <p id="site-hero-aciklama">Denize yakın sıfır dubleks villalar, imarlı arsalar ve yüksek prim potansiyelli tarlalar ile güvenilir emlak danışmanlığı.</p>
+        <div class="hero-butonlar">
+          <a class="btn-kirmizi" onclick="sayfaGoster('villalar-sayfasi')">Villaları İncele</a>
+          <a class="btn-seffaf" onclick="filtreSayfasiniAc()">🔍 Akıllı Portföy Ara</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Otomatik Kayan İkna Kutusu & Mini Haber Kartları -->
+    <div class="bilgi-vitrin-alan">
+      <div class="ikna-slider-kutu">
+        <div>
+          <div class="ikna-ust-etiket">🛡️ NEDEN MARMARA EREĞLİSİ? • BÖLGE REHBERİ</div>
+          <div id="ikna-yazi-alan">
+            <h3 id="ikna-baslik">Yatay Mimari ile Depreme Karşı Güvenli Yaşam</h3>
+            <p id="ikna-aciklama">Yüksek katlı beton yığınları yerine az katlı, müstakil bahçeli ve modern yönetmeliklere uygun yapılarla aileniz için huzurlu bir gelecek kurun.</p>
+          </div>
+        </div>
+        <div class="ikna-noktalar" id="ikna-noktalar">
+          <div class="ikna-nokta aktif" onclick="iknaSec(0)"></div>
+          <div class="ikna-nokta" onclick="iknaSec(1)"></div>
+          <div class="ikna-nokta" onclick="iknaSec(2)"></div>
+          <div class="ikna-nokta" onclick="iknaSec(3)"></div>
+        </div>
+      </div>
+
+      <div class="haber-kartlar-kutu">
+        <div class="mini-haber-kart" onclick="makaleAc(0)">
+          <img class="mini-haber-resim" src="villa.1/1.jpeg" onerror="resimHataYonet(this)" alt="Deprem ve Yatay Mimari">
+          <div class="mini-haber-icerik">
+            <span class="mini-haber-rozet">GÜVENLİ YAŞAM ANALİZİ</span>
+            <p class="mini-haber-baslik">Deprem Sonrası Müstakil ve Az Katlı Konutlara Neden Talep Arttı?</p>
+            <span class="mini-haber-tikla">📖 Detaylı Yazıyı Oku (Buraya Tıklayın) →</span>
+          </div>
+        </div>
+
+        <div class="mini-haber-kart" onclick="makaleAc(1)">
+          <img class="mini-haber-resim" src="villa.2/(1).jpeg" onerror="resimHataYonet(this)" alt="Salgın ve Geniş Alanlar">
+          <div class="mini-haber-icerik">
+            <span class="mini-haber-rozet">SAĞLIK & DOĞA RAPORU</span>
+            <p class="mini-haber-baslik">Salgın ve Kalabalıktan Uzak: Marmara Ereğlisi Neden En Çok Tercih Edilen Bölge Oldu?</p>
+            <span class="mini-haber-tikla">📖 Haberi İncele (Buraya Tıklayın) →</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="ana-portfoy-duzeni">
+      <aside class="ana-filtre" aria-label="Portföy filtreleme">
+        <h2>Portföyü Filtrele</h2>
+        <p>Aradığınız mülkü seçin, uygun ilanları hemen görün.</p>
+        <form onsubmit="anaSayfaFiltrele(event)">
+          <div class="form-grup">
+            <label for="ana-filtre-metin">Konum veya özellik</label>
+            <input id="ana-filtre-metin" type="search" placeholder="Örn. deniz manzaralı villa">
+          </div>
+          <div class="form-grup">
+            <label for="ana-filtre-kategori">İlan türü</label>
+            <select id="ana-filtre-kategori">
+              <option value="">Tüm ilanlar</option>
+              <option value="villa">Villa</option>
+              <option value="arsa">Arsa, tarla ve bahçe</option>
+            </select>
+          </div>
+          <div class="form-grup">
+            <label for="ana-filtre-fiyat">En yüksek fiyat (₺)</label>
+            <input id="ana-filtre-fiyat" type="number" min="0" step="50000" placeholder="Örn. 5.000.000">
+          </div>
+          <button type="submit" class="btn-kirmizi" style="width:100%;">İlanları Göster</button>
+          <button type="button" class="btn-seffaf" style="width:100%; margin-top:8px; background:#475569;" onclick="anaSayfaFiltreSifirla()">Filtreyi Temizle</button>
+          <p id="ana-filtre-durum" aria-live="polite"></p>
+        </form>
+      </aside>
+
+      <div class="ana-portfoy-icerik">
+        <h2 class="bolum-baslik">MARMARA EREĞLİSİ SATILIK VİLLA VE ARSA İLANLARI</h2>
+        <p class="bolum-alt">Portföyleri ve ilan fotoğraflarını incelemek için bir ilana dokunun.</p>
+        <div id="ana-ilan-izgara" class="ilan-izgara"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 2. SATILIK VİLLALAR SAYFASI -->
+  <div id="villalar-sayfasi" class="gizli-sayfa">
+    <h1 class="bolum-baslik">🏡 SATILIK VİLLALARIMIZ</h1>
+    <p class="bolum-alt">Çoklu fotoğrafları ve detayları görmek için ilana tıklayın</p>
+    <div id="villa-ilan-izgara" class="ilan-izgara"></div>
+    <a class="btn-kirmizi" onclick="sayfaGoster('ana-sayfa')">← Ana Sayfaya Dön</a>
+  </div>
+
+  <!-- 3. ARSA & TARLA SAYFASI -->
+  <div id="arsalar-sayfasi" class="gizli-sayfa">
+    <h1 class="bolum-baslik">🌾 ARSA, TARLA & BAHÇELERİMİZ</h1>
+    <p class="bolum-alt">Detayları ve konumu görmek için ilana tıklayın</p>
+    <div id="arsa-ilan-izgara" class="ilan-izgara"></div>
+    <a class="btn-kirmizi" onclick="sayfaGoster('ana-sayfa')">← Ana Sayfaya Dön</a>
+  </div>
+
+  <!-- 4. HAKKIMIZDA SAYFASI -->
+  <div id="hakkimizda-sayfasi" class="gizli-sayfa">
+    <div class="hakkimizda-kutu">
+      <h1 class="bolum-baslik">🏢 AK GAYRİMENKUL HAKKINDA</h1>
+      <p>Trakya'nın incisi Marmara Ereğlisi'nde arsa, tarla, bağ, bahçe ve villa alım-satımında dürüst, şeffaf ve güvenilir danışmanlık hizmeti sunuyoruz.</p>
+      <p>Bölge hakimiyetimiz ve güncel portföyümüzle hem oturum hem de yüksek kazançlı yatırım hedefleyen müşterilerimizin yanındayız.</p>
+      <br>
+      <a class="btn-kirmizi" onclick="sayfaGoster('ana-sayfa')">← Ana Sayfaya Dön</a>
+    </div>
+  </div>
+
+  <!-- 5. KURUMSAL İLETİŞİM SAYFASI -->
+  <div id="iletisim-sayfasi">
+    <div class="iletisim-baslik-alan">
+      <h1 class="bolum-baslik">📞 İLETİŞİM & DANIŞMANLIK</h1>
+      <p class="bolum-alt">Marmara Ereğlisi ofisimiz ve uzman danışmanlarımızla doğrudan iletişime geçin</p>
+    </div>
+
+    <div class="iletisim-izgara">
+      <div class="iletisim-sol">
+        <h3 style="margin-top:0; color:#0f172a;">Ofis & İletişim Hatlarımız</h3>
+        <div class="iletisim-kart-satir">
+          <span>📱</span>
+          <div>
+            <strong>SATIŞ DANIŞMANI 1</strong>
+            <a id="site-telefon-1" href="tel:+905367925980">0536 792 59 80</a>
+          </div>
+        </div>
+        <div class="iletisim-kart-satir">
+          <span>📱</span>
+          <div>
+            <strong>SATIŞ DANIŞMANI 2</strong>
+            <a id="site-telefon-2" href="tel:+905393127098">0539 312 70 98</a>
+          </div>
+        </div>
+        <div class="iletisim-kart-satir">
+          <span>✉️</span>
+          <div>
+            <strong>KURUMSAL E-POSTA</strong>
+            <a id="site-email" href="mailto:emre532@gmail.com">emre532@gmail.com</a>
+          </div>
+        </div>
+        <div class="iletisim-kart-satir">
+          <span>📍</span>
+          <div>
+            <strong>OFİS KONUMU</strong>
+            <span id="site-adres">Dereağzı Mah. 182. Sokak, Marmara Ereğlisi / Tekirdağ</span>
+          </div>
+        </div>
+        <div class="iletisim-kart-satir">
+          <span>🕒</span>
+          <div>
+            <strong>ÇALIŞMA SAATLERİ</strong>
+            <span>Pazartesi - Cumartesi: 09:00 - 19:00</span>
+          </div>
+        </div>
+        <a id="site-whatsapp" class="whatsapp-btn" href="https://wa.me/905367925980" target="_blank" rel="noopener">💬 WhatsApp’tan Hızlı Yazın</a>
+      </div>
+
+      <div class="iletisim-sag">
+        <h3 style="margin-top:0; color:#0f172a;">Sizi Arayalım / Randevu Alın</h3>
+        <p style="font-size:13.5px; color:#64748b; margin-bottom:18px;">İlgilendiğiniz gayrimenkul türünü seçip numaranızı bırakın, en kısa sürede dönüş yapalım.</p>
+
+        <form onsubmit="formGonder(event)">
+          <div class="form-grup">
+            <label>Adınız Soyadınız</label>
+            <input type="text" placeholder="Örn: Ahmet Yılmaz" required>
+          </div>
+          <div class="form-grup">
+            <label>Telefon Numaranız</label>
+            <input type="tel" placeholder="Örn: 05XX XXX XX XX" required>
+          </div>
+          <div class="form-grup">
+            <label>İlgilendiğiniz Portföy</label>
+            <select>
+              <option>Satılık Villa (Dubleks / Müstakil)</option>
+              <option>Konut İmarlı Arsa</option>
+              <option>Yatırımlık Tarla</option>
+              <option>Bağ & Hobi Bahçesi</option>
+            </select>
+          </div>
+          <div class="form-grup">
+            <label>Notunuz (İsteğe Bağlı)</label>
+            <textarea rows="3" placeholder="Bütçeniz veya aradığınız özellikler..."></textarea>
+          </div>
+          <button type="submit" class="btn-kirmizi" style="width:100%; font-size:15px;">Bilgi Talebi Gönder</button>
+          <div id="form-bilgi">✅ Talebiniz alındı! Danışmanlarımız en kısa sürede sizi arayacaktır.</div>
+        </form>
+      </div>
+    </div>
+
+    <div style="text-align:center; margin-top:26px;">
+      <a class="btn-seffaf" style="background-color:#0f172a;" onclick="sayfaGoster('ana-sayfa')">← Ana Sayfaya Dön</a>
+    </div>
+  </div>
+
+  <!-- 6. AKILLI FİLTRELEME SAYFASI -->
+  <div id="filtre-sayfasi" class="gizli-sayfa">
+    <h1 class="bolum-baslik">🔍 AKILLI PORTFÖY FİLTRELEME</h1>
+    <p class="bolum-alt">Aklınızdaki mülkü yazın veya bütçe/metrekare girin, en yakın sonuçları getirelim</p>
+
+    <div class="filtre-duzeni">
+      <div class="filtre-sol">
+        <div class="form-grup">
+          <label>Nasıl bir yer arıyorsunuz?</label>
+          <textarea id="akilli-metin" rows="3" placeholder="Örn: Denize yakın 3+1 sıfır villa, bodrumlu, takaslı veya imarlı arsa..."></textarea>
+        </div>
+        <div class="form-grup">
+          <label>En Yüksek Bütçe (₺)</label>
+          <input type="number" id="filtre-fiyat" placeholder="Örn: 5000000">
+        </div>
+        <div class="form-grup">
+          <label>En Az Metrekare (m²)</label>
+          <input type="number" id="filtre-m2" placeholder="Örn: 150">
+        </div>
+        <button class="btn-kirmizi" style="width:100%;" onclick="akilliFiltrele()">Sonuçları Bul</button>
+        <button class="btn-seffaf" style="width:100%; background-color:#475569; margin-top:8px;" onclick="filtreSifirla()">Temizle</button>
+      </div>
+
+      <div class="filtre-sag">
+        <p id="filtre-durum" style="font-weight:700; color:#b91c1c; margin-top:0;"></p>
+        <div id="filtre-sonuclar" class="filtre-sonuc-izgara"></div>
+      </div>
+    </div>
+
+    <div style="margin-top:24px;">
+      <a class="btn-kirmizi" onclick="sayfaGoster('ana-sayfa')">← Ana Sayfaya Dön</a>
+    </div>
+  </div>
+
+  <!-- Yerel cihazda çalışan yönetim paneli: /?yonetim=1 -->
+  <div id="admin-sayfasi" class="gizli-sayfa">
+    <h1 class="bolum-baslik">🔧 YEREL YÖNETİM PANELİ</h1>
+    <p class="bolum-alt">Site metinlerini ve portföy ilanlarını düzenleyip bu tarayıcıda önizleyin.</p>
+    <div class="admin-yerel-uyari">
+      Bu panel yalnızca bu cihazdaki tarayıcıda saklanır; müşterilere veya başka cihazlara gönderilmez.
+      Paylaşımlı müşteri paneli için sunucu, hesap ve ortak veritabanı gerekir.
+    </div>
+
+    <div class="admin-panel-grid">
+      <section class="detay-kutu">
+        <h2 style="margin-top:0;">Portföy ilanları</h2>
+        <div class="form-grup">
+          <label for="admin-ilan-secimi">Düzenlenecek ilan</label>
+          <select id="admin-ilan-secimi" onchange="adminIlanYukle()"></select>
+        </div>
+        <div style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:16px;">
+          <button type="button" class="btn-kirmizi" onclick="adminYeniIlanEkle()">+ Yeni ilan</button>
+          <button type="button" class="btn-seffaf" style="background:#475569;" onclick="adminIlanSil()">Seçili ilanı sil</button>
+        </div>
+        <form id="admin-ilan-form" onsubmit="adminIlanKaydet(event)">
+          <div class="form-grup">
+            <label for="admin-ilan-baslik">İlan başlığı</label>
+            <input id="admin-ilan-baslik" required>
+          </div>
+          <div class="form-grup">
+            <label for="admin-ilan-kategori">Kategori</label>
+            <select id="admin-ilan-kategori">
+              <option value="villa">Villa</option>
+              <option value="arsa">Arsa, tarla ve bahçe</option>
+            </select>
+          </div>
+          <div class="form-grup">
+            <label for="admin-ilan-tur">Kart etiketi</label>
+            <input id="admin-ilan-tur" required>
+          </div>
+          <div class="form-grup">
+            <label for="admin-ilan-fiyat">Fiyat (₺)</label>
+            <input id="admin-ilan-fiyat" type="number" min="0" step="1" required>
+          </div>
+          <div class="form-grup">
+            <label for="admin-ilan-m2">Metrekare</label>
+            <input id="admin-ilan-m2" type="number" min="0" step="1" required>
+          </div>
+          <div class="form-grup">
+            <label for="admin-ilan-ozet">Kart açıklaması</label>
+            <textarea id="admin-ilan-ozet" rows="2" required></textarea>
+          </div>
+          <div class="form-grup">
+            <label for="admin-ilan-aciklama">Detaylı açıklama</label>
+            <textarea id="admin-ilan-aciklama" rows="4" required></textarea>
+          </div>
+          <div class="form-grup">
+            <label for="admin-ilan-oda">Oda / nitelik</label>
+            <input id="admin-ilan-oda" required>
+          </div>
+          <div class="form-grup">
+            <label for="admin-ilan-tapu">Tapu bilgisi</label>
+            <input id="admin-ilan-tapu" required>
+          </div>
+          <div class="form-grup">
+            <label for="admin-ilan-mesafe">Konum ve mesafe</label>
+            <input id="admin-ilan-mesafe" required>
+          </div>
+          <div class="form-grup">
+            <label for="admin-ilan-adres">Adres</label>
+            <input id="admin-ilan-adres" required>
+          </div>
+          <div class="form-grup">
+            <label for="admin-ilan-ozellik">Arama anahtar kelimeleri</label>
+            <textarea id="admin-ilan-ozellik" rows="2"></textarea>
+          </div>
+          <div class="form-grup">
+            <label for="admin-ilan-resimler">Fotoğraf yolları (her satıra bir yol)</label>
+            <textarea id="admin-ilan-resimler" rows="4" placeholder="arsa.1/1.jpeg" required></textarea>
+          </div>
+          <button type="submit" class="btn-kirmizi">İlanı kaydet</button>
+        </form>
+        <p id="admin-ilan-durum" aria-live="polite"></p>
+      </section>
+
+      <section class="detay-kutu">
+        <h2 style="margin-top:0;">Ana sayfa ve iletişim</h2>
+        <form onsubmit="adminSiteBilgileriniKaydet(event)">
+          <div class="form-grup">
+            <label for="admin-site-baslik">Tarayıcı / site başlığı</label>
+            <input id="admin-site-baslik" required>
+          </div>
+          <div class="form-grup">
+            <label for="admin-hero-baslik">Ana sayfa başlığı</label>
+            <input id="admin-hero-baslik" required>
+          </div>
+          <div class="form-grup">
+            <label for="admin-hero-aciklama">Ana sayfa açıklaması</label>
+            <textarea id="admin-hero-aciklama" rows="3" required></textarea>
+          </div>
+          <div class="form-grup">
+            <label for="admin-site-telefon-1">Telefon 1</label>
+            <input id="admin-site-telefon-1" type="tel" required>
+          </div>
+          <div class="form-grup">
+            <label for="admin-site-telefon-2">Telefon 2</label>
+            <input id="admin-site-telefon-2" type="tel" required>
+          </div>
+          <div class="form-grup">
+            <label for="admin-site-email">E-posta</label>
+            <input id="admin-site-email" type="email" required>
+          </div>
+          <div class="form-grup">
+            <label for="admin-site-adres">Ofis adresi</label>
+            <input id="admin-site-adres" required>
+          </div>
+          <button type="submit" class="btn-kirmizi">Site bilgilerini kaydet</button>
+        </form>
+        <p id="admin-site-durum" aria-live="polite"></p>
+        <button type="button" class="btn-seffaf" style="background:#475569;" onclick="adminYerelDegisiklikleriSifirla()">Yerel değişiklikleri sıfırla</button>
+      </section>
+    </div>
+    <div style="margin:18px 0;">
+      <a class="btn-kirmizi" onclick="sayfaGoster('ana-sayfa')">Site önizlemesine dön</a>
+    </div>
+  </div>
+
+  <!-- 7. İLAN DETAY & ÇOKLU FOTOĞRAF GALERİ SAYFASI -->
+  <div id="ilan-detay-sayfasi" class="gizli-sayfa">
+    <div class="detay-kutu">
+      <div class="detay-ust">
+        <div class="detay-sol-galeri">
+          <div class="detay-ana-resim-kutu">
+            <img id="detay-resim" class="detay-gorsel" src="" alt="İlan Görseli">
+            <button class="galeri-ok galeri-ok-sol" onclick="galeriDegistir(-1)">‹</button>
+            <button class="galeri-ok galeri-ok-sag" onclick="galeriDegistir(1)">›</button>
+            <span id="galeri-sayac" class="galeri-sayac">1 / 1</span>
+          </div>
+          <div id="detay-galeri-kucukler" class="galeri-kucukler"></div>
+        </div>
+
+        <div class="detay-bilgi">
+          <span id="detay-etiket" class="ilan-etiket">SATILIK VİLLA</span>
+          <h1 id="detay-baslik" style="margin:4px 0 8px 0; color:#0f172a; font-size:23px;">İlan Başlığı</h1>
+          <p id="detay-fiyat" style="font-size:22px; font-weight:900; color:#b91c1c; margin:0 0 12px 0;">0 ₺</p>
+          <p id="detay-aciklama" style="font-size:14.2px; color:#475569; line-height:1.58; margin:0 0 14px 0;"></p>
+
+          <table class="detay-ozellik-tablo">
+            <tr><td>Metrekare</td><td id="detay-m2">-</td></tr>
+            <tr><td>Oda / Nitelik</td><td id="detay-oda">-</td></tr>
+            <tr><td>Tapu & Ada/Parsel</td><td id="detay-tapu">-</td></tr>
+            <tr><td>Konum & Mesafe</td><td id="detay-mesafe">-</td></tr>
+            <tr><td>Açık Adres</td><td id="detay-adres">-</td></tr>
+          </table>
+
+          <button class="btn-kirmizi" onclick="ilanIcinMesajAc()">💬 Bu İlan İçin Bilgi Al (Canlı Mesaj)</button>
+        </div>
+      </div>
+
+      <div class="detay-harita-alan">
+        <h3 style="margin:0 0 10px 0; color:#0f172a; font-size:17px;">📍 İlanın Konumu</h3>
+        <iframe
+          id="detay-harita"
+          src=""
+          width="100%"
+          height="300"
+          style="border:0; border-radius:12px;"
+          loading="lazy">
+        </iframe>
+      </div>
+    </div>
+
+    <a class="btn-kirmizi" onclick="sayfaGoster('ana-sayfa')">← Ana Sayfaya Dön</a>
+  </div>
+
+  <!-- MAKALE & HABER OKUMA PENCERESİ -->
+  <div id="makale-modal" onclick="makaleKapat(event)">
+    <div class="makale-pencere" onclick="event.stopPropagation()">
+      <img id="makale-gorsel" class="makale-ust-gorsel" src="villa.1/1.jpeg" onerror="resimHataYonet(this)" alt="Makale Görseli">
+      <div class="makale-govde">
+        <span id="makale-etiket" class="mini-haber-rozet">BÖLGE ANALİZİ</span>
+        <h2 id="makale-baslik">Makale Başlığı</h2>
+        <div id="makale-icerik"></div>
+        <div style="margin-top:18px; display:flex; gap:10px; flex-wrap:wrap;">
+          <button class="btn-kirmizi" onclick="makaleKapatVePortfoyAc()">Uygun Portföyleri Gör</button>
+          <button class="btn-seffaf" style="background-color:#334155;" onclick="document.getElementById('makale-modal').style.display='none'">Kapat</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MÜŞTERİ CANLI MESAJLAŞMA & HAZIR ÖNERİ PENCERESİ -->
+  <button id="canli-sohbet-tetik" onclick="sohbetAc()">💬 Danışmana Sor</button>
+
+  <div id="canli-sohbet-pencere">
+    <div class="sohbet-baslik">
+      <div>
+        <strong style="font-size:14px; display:block;">Ak Gayrimenkul Canlı Destek</strong>
+        <span style="font-size:11px; color:#cbd5e1;">● Yönetici Hattına Doğrudan Bağlı</span>
+      </div>
+      <button onclick="sohbetKapat()" style="background:none; border:none; color:#ffffff; font-size:18px; font-weight:bold; cursor:pointer;">✕</button>
+    </div>
+
+    <div id="sohbet-aktif-ilan" class="sohbet-ilan-etiket">📌 Genel Portföy Danışmanlığı</div>
+
+    <div id="sohbet-mesajlar">
+      <div class="mesaj-balon mesaj-admin">
+        Merhaba! Marmara Ereğlisi portföylerimiz hakkında merak ettiklerinizi aşağıdaki hazır sorulardan seçebilir veya doğrudan yazabilirsiniz.
+      </div>
+    </div>
+
+    <div class="oneri-bolum">
+      <span class="oneri-baslik">💡 Şunu mu sormak istemiştiniz? (Tıklayın otomatik gitsin)</span>
+      <div id="hizli-oneriler"></div>
+    </div>
+
+    <div class="sohbet-alt-giris">
+      <input type="text" id="musteri-mesaj-input" placeholder="Mesajınızı yazın..." onkeypress="if(event.key==='Enter') mesajGonder()">
+      <button onclick="mesajGonder()">Gönder</button>
+    </div>
+  </div>
+
+  <script>
+    /* =========================================================================
+       0. SONSUZ DÖNGÜYÜ ENGELLEYEN AKILLI RESİM YÜKLEME KORUMASI
+       ========================================================================= */
+    var bosGorselSvg = "data:image/svg+xml;charset=UTF-8," + encodeURIComponent(
+      '<svg xmlns="http://www.w3.org/2000/svg" width="600" height="400" viewBox="0 0 600 400">' +
+      '<rect width="600" height="400" fill="#1e293b"/>' +
+      '<text x="50%" y="48%" dominant-baseline="middle" text-anchor="middle" fill="#f8fafc" font-family="sans-serif" font-size="22" font-weight="bold">Ak Gayrimenkul Portföy</text>' +
+      '<text x="50%" y="56%" dominant-baseline="middle" text-anchor="middle" fill="#94a3b8" font-family="sans-serif" font-size="14">Fotoğraf klasörü kontrol ediliyor</text>' +
+      '</svg>'
+    );
+
+    function resimHataYonet(img) {
+      var adim = Number(img.getAttribute("data-hata-adim") || "0");
+      var mevcutSrc = img.getAttribute("src") || "";
+
+      if (adim === 0 && mevcutSrc.indexOf(".jpeg") !== -1) {
+        img.setAttribute("data-hata-adim", "1");
+        img.src = mevcutSrc.replace(".jpeg", ".jpg");
+      } else if (adim === 1 && mevcutSrc.indexOf(".jpg") !== -1) {
+        img.setAttribute("data-hata-adim", "2");
+        img.src = mevcutSrc.replace(".jpg", ".jpeg.jpg");
+      } else {
+        img.onerror = null;
+        img.src = bosGorselSvg;
+      }
+    }
+
+    /* =========================================================================
+       1. DÜNYA AÇILIŞ ANİMASYONU
+       ========================================================================= */
+    var canvas = document.getElementById("dunya");
+    var ctx = canvas.getContext("2d");
+    var dpr = window.devicePixelRatio || 1;
+    var genislik = window.innerWidth;
+    var yukseklik = window.innerHeight;
+
+    canvas.width = genislik * dpr;
+    canvas.height = yukseklik * dpr;
+    canvas.style.width = genislik + "px";
+    canvas.style.height = yukseklik + "px";
+    ctx.scale(dpr, dpr);
+    ctx.imageSmoothingQuality = "high";
+
+    var dunyaHaritasi = new Image();
+    dunyaHaritasi.src = "https://unpkg.com/three-globe/example/img/earth-blue-marble.jpg";
+
+    var yildizlar = [];
+    for (var i = 0; i < 80; i++) {
+      yildizlar.push({
+        x: Math.random() * genislik,
+        y: Math.random() * yukseklik,
+        s: 1 + Math.random() * 1.5
+      });
+    }
+
+    var baslangic = Date.now();
+
+    function ciz() {
+      var gecenSure = (Date.now() - baslangic) / 1000;
+      var merkezX = genislik / 2;
+      var merkezY = yukseklik / 2;
+
+      ctx.fillStyle = "#000000";
+      ctx.fillRect(0, 0, genislik, yukseklik);
+
+      ctx.fillStyle = "rgba(255, 255, 255, 0.85)";
+      for (var i = 0; i < yildizlar.length; i++) {
+        ctx.fillRect(yildizlar[i].x, yildizlar[i].y, yildizlar[i].s, yildizlar[i].s);
+      }
+
+      var donusIlerleme = Math.min(gecenSure / 1.6, 1);
+      var yumusakDonus = 1 - Math.pow(1 - donusIlerleme, 3);
+
+      var yakinlasmaIlerleme = Math.max(0, Math.min((gecenSure - 1.2) / 1.3, 1));
+      var hizliYakinlasma = Math.pow(yakinlasmaIlerleme, 2.5);
+
+      var baslangicYaricap = Math.min(genislik, yukseklik) * 0.11;
+      var yaricap = baslangicYaricap * (1 + hizliYakinlasma * 11);
+
+      ctx.save();
+      ctx.translate(merkezX, merkezY);
+
+      ctx.beginPath();
+      ctx.arc(0, 0, yaricap * 1.03, 0, Math.PI * 2);
+      ctx.fillStyle = "rgba(56, 189, 248, 0.22)";
+      ctx.fill();
+
+      ctx.beginPath();
+      ctx.arc(0, 0, yaricap, 0, Math.PI * 2);
+      ctx.clip();
+
+      ctx.fillStyle = "#061b3a";
+      ctx.fillRect(-yaricap, -yaricap, yaricap * 2, yaricap * 2);
+
+      if (dunyaHaritasi.complete && dunyaHaritasi.naturalWidth > 0) {
+        var haritaGenislik = yaricap * 6.0;
+        var haritaYukseklik = yaricap * 3.0;
+        var kalanTur = (1 - yumusakDonus) * haritaGenislik * 3;
+        var hedefX = -haritaGenislik * 0.578 - kalanTur;
+        var hedefY = -haritaYukseklik * 0.272;
+
+        for (var k = 0; k < 4; k++) {
+          ctx.drawImage(dunyaHaritasi, hedefX + haritaGenislik * k, hedefY, haritaGenislik, haritaYukseklik);
+        }
+      }
+
+      var golge = ctx.createRadialGradient(-yaricap * 0.3, -yaricap * 0.3, yaricap * 0.1, 0, 0, yaricap);
+      golge.addColorStop(0, "rgba(255,255,255,0.05)");
+      golge.addColorStop(0.75, "rgba(0,0,0,0.25)");
+      golge.addColorStop(1, "rgba(0,0,0,0.85)");
+      ctx.fillStyle = golge;
+      ctx.fillRect(-yaricap, -yaricap, yaricap * 2, yaricap * 2);
+
+      if (donusIlerleme > 0.85) {
+        var halkaYaricap = Math.max(4, 26 * (1 - yakinlasmaIlerleme));
+        ctx.beginPath();
+        ctx.arc(0, 0, halkaYaricap, 0, Math.PI * 2);
+        ctx.strokeStyle = "#ef4444";
+        ctx.lineWidth = 2.5;
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.arc(0, 0, 3.5, 0, Math.PI * 2);
+        ctx.fillStyle = "#ffffff";
+        ctx.fill();
+      }
+
+      ctx.restore();
+
+      if (gecenSure > 1.35) {
+        document.getElementById("konum-etiket").style.opacity = "1";
+      }
+
+      if (gecenSure < 2.7) {
+        requestAnimationFrame(ciz);
+      }
+    }
+
+    ciz();
+
+    setTimeout(function() {
+      document.getElementById("giris-ekrani").style.display = "none";
+    }, 2700);
+
+    /* =========================================================================
+       2. OTOMATİK KAYAN İKNA YAZILARI VE MİNİ HABER MAKALELERİ
+       ========================================================================= */
+    var iknaSlaytlar = [
+      {
+        baslik: "Yatay Mimari ile Depreme Karşı Huzurlu ve Güvenli Yaşam",
+        aciklama: "Çok katlı yoğun yapılar yerine az katlı, müstakil bahçeli ve radye temelli modern yapılarla aileniz için güvenli bir yaşam alanı oluşturun."
+      },
+      {
+        baslik: "Salgın ve Kalabalıktan Uzak, Geniş Bahçeli Özgür Hayat",
+        aciklama: "Apartman dairelerinin kapalı koridorları yerine kendi bahçenizde temiz Marmara deniz havası alabileceğiniz, dört mevsim ferah yaşam alanları sunuyoruz."
+      },
+      {
+        baslik: "İstanbul'a Sadece 1 Saat Mesafede Doğa ve Deniz Keyfi",
+        aciklama: "Hem büyükşehrin iş imkanlarından kopmadan hem de hafta sonu veya her akşam trafik stresinden uzaklaşarak deniz kıyısında nefes alabileceğiniz stratejik konum."
+      },
+      {
+        baslik: "Trakya'nın Gelişen Aksında Yüksek Prim Potansiyelli Yatırım",
+        aciklama: "Sanayi, liman ve ulaşım yatırımlarının kesişim noktasında bulunan Marmara Ereğlisi'nde imarlı arsa ve tarlalar her dönem değerini korumaya devam ediyor."
+      }
+    ];
+
+    var aktifIknaIndex = 0;
+
+    function iknaGoster(index) {
+      aktifIknaIndex = index;
+      var alan = document.getElementById("ikna-yazi-alan");
+      alan.style.opacity = "0";
+
+      setTimeout(function() {
+        document.getElementById("ikna-baslik").innerText = iknaSlaytlar[index].baslik;
+        document.getElementById("ikna-aciklama").innerText = iknaSlaytlar[index].aciklama;
+        alan.style.opacity = "1";
+      }, 250);
+
+      var noktalar = document.querySelectorAll(".ikna-nokta");
+      noktalar.forEach(function(n, idx) {
+        if (idx === index) n.classList.add("aktif");
+        else n.classList.remove("aktif");
+      });
+    }
+
+    function iknaSec(index) {
+      iknaGoster(index);
+    }
+
+    setInterval(function() {
+      var sonraki = (aktifIknaIndex + 1) % iknaSlaytlar.length;
+      iknaGoster(sonraki);
+    }, 4500);
+
+    var makaleler = [
+      {
+        etiket: "GÜVENLİ YAŞAM & YATAY MİMARİ",
+        baslik: "Deprem Sonrası Müstakil ve Az Katlı Konutlara Neden Talep Arttı?",
+        icerik: "<p>Son yıllarda yaşanan sarsıntılar, konut tercihlerinde köklü bir değişime yol açtı. Aileler artık yüksek katlı ve bitişik nizam binalar yerine <strong>az katlı, radye temelli ve müstakil bahçeli</strong> bölgelere yöneliyor.</p><p>Marmara Ereğlisi bölgesi, yapı yoğunluğunun düşük olması ve modern yapı denetimli villa projeleri sayesinde güvenli gelecek arayanların ilk tercihleri arasında yer alıyor.</p>"
+      },
+      {
+        etiket: "SAĞLIK, SALGIN DÖNEMİ & GENİŞ ALANLAR",
+        baslik: "Salgın ve Kalabalıktan Uzak: Marmara Ereğlisi Neden En Çok Tercih Edilen Bölge Oldu?",
+        icerik: "<p>Küresel salgın dönemlerinde metropollerdeki kalabalık apartman yaşamının zorlukları açıkça görüldü. İnsanlar kendi müstakil bahçesine çıkabileceği, temiz hava alabileceği geniş alanlara yöneldi.</p><p>Marmara Ereğlisi; uzun sahil şeridi, düşük nüfus yoğunluğu, rüzgar sirkülasyonu yüksek temiz havası ve İstanbul'a olan yakınlığıyla dört mevsim yaşanabilir en sağlıklı kaçış noktalarından biri olarak öne çıkıyor.</p>"
+      }
+    ];
+
+    function makaleAc(index) {
+      var m = makaleler[index];
+      document.getElementById("makale-etiket").innerText = m.etiket;
+      document.getElementById("makale-baslik").innerText = m.baslik;
+      document.getElementById("makale-icerik").innerHTML = m.icerik;
+      document.getElementById("makale-modal").style.display = "flex";
+    }
+
+    function makaleKapat(e) {
+      if (e.target.id === "makale-modal") {
+        document.getElementById("makale-modal").style.display = "none";
+      }
+    }
+
+    function makaleKapatVePortfoyAc() {
+      document.getElementById("makale-modal").style.display = "none";
+      sayfaGoster("villalar-sayfasi");
+    }
+
+    /* =========================================================================
+       3. MÜŞTERİ MESAJLAŞMA KUTUSU & HAZIR ÖNERİLER
+       ========================================================================= */
+    var hazirMesajOnerileri = [
+      "Fiyatta pazarlık payı var mı?",
+      "Araba takası koşulları nelerdir?",
+      "Tapu ve iskan durumu nedir?",
+      "Bu mülkü ne zaman görebiliriz?",
+      "Denize ve E-5'e mesafesi nedir?"
+    ];
+
+    var aktifIlanBaslik = "Genel Portföy Danışmanlığı";
+    var adminTelefon = "905367925980";
+
+    function onerileriOlustur() {
+      var kutu = document.getElementById("hizli-oneriler");
+      kutu.innerHTML = "";
+      hazirMesajOnerileri.forEach(function(yazi) {
+        var btn = document.createElement("button");
+        btn.className = "oneri-chip";
+        btn.innerText = yazi;
+        btn.onclick = function() {
+          mesajGonderHazir(yazi);
+        };
+        kutu.appendChild(btn);
+      });
+    }
+    onerileriOlustur();
+
+    function sohbetAc() {
+      document.getElementById("canli-sohbet-pencere").style.display = "flex";
+      document.getElementById("canli-sohbet-tetik").style.display = "none";
+    }
+
+    function sohbetKapat() {
+      document.getElementById("canli-sohbet-pencere").style.display = "none";
+      document.getElementById("canli-sohbet-tetik").style.display = "flex";
+    }
+
+    function ilanIcinMesajAc() {
+      document.getElementById("sohbet-aktif-ilan").innerText = "📌 İlgilenilen İlan: " + aktifIlanBaslik;
+      sohbetAc();
+      var alan = document.getElementById("sohbet-mesajlar");
+      alan.innerHTML += '<div class="mesaj-balon mesaj-admin"><strong>' + aktifIlanBaslik + '</strong> ilanı için danışman hattına bağlandınız. Aşağıdaki sorulardan birine tıklayarak hemen bilgi alabilirsiniz:</div>';
+      alan.scrollTop = alan.scrollHeight;
+    }
+
+    function mesajGonderHazir(secilenYazi) {
+      mesajIsle(secilenYazi);
+    }
+
+    function mesajGonder() {
+      var input = document.getElementById("musteri-mesaj-input");
+      var metin = input.value.trim();
+      if (!metin) return;
+      input.value = "";
+      mesajIsle(metin);
+    }
+
+    function mesajIsle(metin) {
+      var alan = document.getElementById("sohbet-mesajlar");
+      alan.innerHTML += '<div class="mesaj-balon mesaj-musteri">' + metin + '</div>';
+      alan.scrollTop = alan.scrollHeight;
+
+      var tamMesaj = "Merhaba Ak Gayrimenkul, [" + aktifIlanBaslik + "] ilanı hakkında sorum var: " + metin;
+      var whatsappLink = "https://wa.me/" + adminTelefon + "?text=" + encodeURIComponent(tamMesaj);
+
+      setTimeout(function() {
+        alan.innerHTML += '<div class="mesaj-balon mesaj-admin">' +
+          'Sorunuz not edildi! Danışmanımıza anında iletmek ve canlı yanıt almak için aşağıdaki butona dokunun:<br>' +
+          '<a href="' + whatsappLink + '" target="_blank" style="display:inline-block; margin-top:7px; background:#16a34a; color:#fff; padding:6px 11px; border-radius:6px; text-decoration:none; font-weight:700; font-size:12px;">📲 Mesajı Yöneticiye (Admin) Gönder</a>' +
+          '</div>';
+        alan.scrollTop = alan.scrollHeight;
+      }, 450);
+    }
+
+    /* =========================================================================
+       4. FOTOĞRAF LİSTELERİ (villa.1, villa.2, villa.3, arsa.1) & TÜM İLANLAR
+       ========================================================================= */
+    var villa1Resimler = [];
+    for (var i = 1; i <= 13; i++) {
+      villa1Resimler.push("villa.1/" + i + ".jpeg");
+    }
+
+    var villa2Resimler = [];
+    for (var j = 1; j <= 19; j++) {
+      villa2Resimler.push(j === 11 ? "villa.2/ (11).jpeg" : "villa.2/(" + j + ").jpeg");
+    }
+
+    var villa3Resimler = [];
+    for (var k = 1; k <= 19; k++) {
+      villa3Resimler.push("villa.3/1 (" + k + ").jpeg");
+    }
+
+    var arsa1Resimler = [
+      "arsa.1/1.jpeg",
+      "arsa.1/2.jpeg",
+      "arsa.1/3.jpeg"
+    ];
+
+    var tumIlanlar = [
+      {
+        id: 0,
+        kategori: "villa",
+        baslik: "Denize 1km mesafe, Kuş Bakışı Deniz Manzaralı 3+1 Sıfır Villa",
+        kisaOzet: "180 m² arsalı, bodrumlu, radyan temelli, köşe başı, önü kapanmaz, iskanlı sıfır villa.",
+        tur: "SATILIK VİLLA",
+        fiyat: 6750000,
+        m2: 180,
+        oda: "3+1 (Bodrumlu, Sıfır)",
+        tapu: "İskanlı • Yapı Denetimli • 1225 Ada 1 Parsel",
+        mesafe: "Cami 50m • Market & E-5 100m • Deniz 1km mesafede",
+        adres: "8028. Sokak 26, Marmaraereğlisi, 59740, TR",
+        aciklama: "Villamız 3+1 olup yapı denetimli, iskanlı ve yapımı yeni bitmiştir. Köşe başı ve önü kapanmaz konumda kuş bakışı deniz manzarasına sahiptir. 180 m² arsası ve bodrumu bulunmakta olup depreme dayanıklı radye temel ile inşa edilmiştir. Araba takası ve üstüne nakit alım olur.",
+        ozellik: "3+1 yapı denetimli iskanlı sıfır kuş bakışı deniz manzaralı köşe başı 180 metre bodrumlu depreme dayanıklı radyan temel cami market e-5 1225 ada 1 parsel 8028 sokak",
+        resimler: villa1Resimler
+      },
+      {
+        id: 1,
+        kategori: "villa",
+        baslik: "2 Katlı 3+1 Sıfır Lüks Villa (160 m²)",
+        kisaOzet: "332 m² arsa içerisinde, yapımı yeni tamamlanmış 160 m² geniş kullanım alanlı 2 katlı 3+1 sıfır villa.",
+        tur: "SATILIK VİLLA",
+        fiyat: 5450000,
+        m2: 160,
+        oda: "2 Katlı 3+1 Sıfır",
+        tapu: "Müstakil Tapulu • 332 m² Arsa • 1207 Ada 2 Parsel",
+        mesafe: "Marmara Ereğlisi Merkezi Konum",
+        adres: "Marmaraereğlisi, 59740, Tekirdağ",
+        aciklama: "Marmara Ereğlisi 1207 Ada 2 Parsel üzerinde, 332 m² arsa içerisinde yapımı yeni bitmiş, ferah iç mimariye sahip 160 m² büyüklüğünde 2 katlı 3+1 sıfır müstakil villa.",
+        ozellik: "2 katlı 3+1 160 metre 332 arsa yeni sıfır villa marmara ereğlisi lüks müstakil 1207 ada 2 parsel",
+        resimler: villa2Resimler
+      },
+      {
+        id: 2,
+        kategori: "villa",
+        baslik: "3 Katlı 4+1 Müstakil Villa (180 m² Net Arsa)",
+        kisaOzet: "3 yaşında, 180 m² net arsa üzerinde geniş aileler için 3 katlı 4+1 müstakil villa (Pazarlıklı).",
+        tur: "SATILIK VİLLA",
+        fiyat: 5400000,
+        m2: 180,
+        oda: "3 Katlı 4+1 (3 Yaşında)",
+        tapu: "Müstakil Tapulu • Pazarlıklı",
+        mesafe: "Marmara Ereğlisi • 180 m² Net Arsa",
+        adres: "Marmaraereğlisi, 59740, Tekirdağ",
+        aciklama: "Marmara Ereğlisi'nde 180 m² net arsa üzerinde yer alan, 3 yaşında, geniş ve kullanışlı 3 katlı 4+1 müstakil villa. Fiyatta pazarlık payı mevcuttur.",
+        ozellik: "3 katlı 4+1 180 metre net arsa 3 yaşında villa marmara ereğlisi pazarlıklı müstakil",
+        resimler: villa3Resimler
+      },
+      {
+        id: 3,
+        kategori: "arsa",
+        baslik: "270 m² 1207 Ada 2 Parsel Köşe Başı Fırsat Yatırımlık Arsa",
+        kisaOzet: "1207 Ada 2 Parsel'de köşe başı konumda, yüksek prim potansiyelli 270 m² fırsat yatırım arsası.",
+        tur: "SATILIK ARSA",
+        fiyat: 3300000,
+        m2: 270,
+        oda: "Arsa (Köşe Başı)",
+        tapu: "Müstakil Tapulu • 1207 Ada 2 Parsel",
+        mesafe: "Köşe Başı • Fırsat Yatırım",
+        adres: "Marmaraereğlisi, 59740, Tekirdağ",
+        aciklama: "Marmara Ereğlisi 1207 Ada 2 Parsel üzerinde yer alan, 270 m² büyüklüğünde köşe başı konumda fırsat yatırım arsası.",
+        ozellik: "270 metre 1207 ada 2 parsel köşe başı fırsat yatırım arsa marmara ereğlisi",
+        resimler: arsa1Resimler
+      },
+      {
+        id: 4,
+        kategori: "arsa",
+        baslik: "350 m² Konut İmarlı Arsa",
+        kisaOzet: "Elektrik ve suyu hazır, villa yapımına uygun köşe parsel.",
+        tur: "SATILIK ARSA",
+        fiyat: 2750000,
+        m2: 350,
+        oda: "Konut İmarlı (%40)",
+        tapu: "Müstakil Parsel",
+        mesafe: "Altyapısı Hazır Köşe Parsel",
+        adres: "Dereağzı Mah. 182. Sokak, Marmara Ereğlisi / Tekirdağ",
+        aciklama: "Elektrik, su ve doğalgaz altyapısı hazır, hemen villa inşaatına başlanabilecek köşe başı imarlı arsa.",
+        ozellik: "elektrik su hazır villa yapımına uygun köşe parsel imarlı arsa dereağzı",
+        resimler: ["arsa.1/1.jpeg"]
+      },
+      {
+        id: 5,
+        kategori: "arsa",
+        baslik: "500 m² Meyve Ağaçlı Bahçe",
+        kisaOzet: "Etrafı tel örgülü, hafta sonu dinlenmeye hazır hobi bahçesi.",
+        tur: "BAĞ & BAHÇE",
+        fiyat: 1650000,
+        m2: 500,
+        oda: "Bağ & Hobi Bahçesi",
+        tapu: "Hisseli / Kullanım Alanı Belli",
+        mesafe: "Doğa İçinde Müstakil Kullanım",
+        adres: "Dereağzı Mah. 182. Sokak, Marmara Ereğlisi / Tekirdağ",
+        aciklama: "Etrafı tel örgü ile çevrili, yetişkin meyve ağaçları bulunan, hafta sonu doğa ile iç içe dinlenmeye hazır bahçe.",
+        ozellik: "tel örgülü hafta sonu müstakil bağ bahçe hobi meyve ağaçlı ucuz uygun ekonomik",
+        resimler: ["arsa.1/2.jpeg"]
+      }
+    ];
+
+    var yerelVeriAnahtari = "ak-gayrimenkul-yerel-yonetim-v1";
+    var siteAyarlari = {
+      siteBaslik: "Ak Gayrimenkul | Marmara Ereğlisi Satılık Villa ve Arsa",
+      heroBaslik: "Trakya’nın İncisinde Geleceğinize Değer Katan Yatırımlar",
+      heroAciklama: "Denize yakın sıfır dubleks villalar, imarlı arsalar ve yüksek prim potansiyelli tarlalar ile güvenilir emlak danışmanlığı.",
+      telefon1: "0536 792 59 80",
+      telefon2: "0539 312 70 98",
+      email: "emre532@gmail.com",
+      adres: "Dereağzı Mah. 182. Sokak, Marmara Ereğlisi / Tekirdağ"
+    };
+
+    function yerelYonetimVerisiniYukle() {
+      try {
+        var kayitliVeri = localStorage.getItem(yerelVeriAnahtari);
+        if (!kayitliVeri) return;
+
+        var veri = JSON.parse(kayitliVeri);
+        var ilanlarGecerli = veri && Array.isArray(veri.ilanlar) && veri.ilanlar.every(function(ilan) {
+          return ilan && typeof ilan.id === "number" &&
+            typeof ilan.baslik === "string" && Array.isArray(ilan.resimler);
+        });
+        if (!ilanlarGecerli) throw new Error("Kaydedilmiş ilan verisinin biçimi geçersiz.");
+
+        tumIlanlar = veri.ilanlar;
+        if (veri.site && typeof veri.site === "object") {
+          siteAyarlari = Object.assign({}, siteAyarlari, veri.site);
+        }
+      } catch (error) {
+        console.error("Yerel yönetim verisi okunamadı:", error);
+        var hataAlani = document.getElementById("yerel-veri-hatasi");
+        hataAlani.textContent = "Yerel düzenlemeler okunamadı. Site varsayılan ilanlarla açıldı. Yönetim panelinden verileri kontrol edin.";
+        hataAlani.style.display = "block";
+      }
+    }
+
+    yerelYonetimVerisiniYukle();
+
+    function kartHtmlUret(ilan, genislikStil) {
+      var kapakFoto = ilan.resimler[0];
+      var fotoSayisi = ilan.resimler.length;
+      return '<div class="ilan-kart" style="' + (genislikStil || '') + '" onclick="ilanDetayAc(' + ilan.id + ')">' +
+        '<div class="ilan-kart-gorsel-kutu">' +
+          '<img src="' + kapakFoto + '" onerror="resimHataYonet(this)" alt="' + ilan.baslik + '" loading="lazy" decoding="async">' +
+          '<span class="foto-sayi-rozet">📷 ' + fotoSayisi + ' Fotoğraf</span>' +
+        '</div>' +
+        '<div class="ilan-icerik">' +
+          '<div>' +
+            '<span class="ilan-etiket">' + ilan.tur + '</span>' +
+            '<p class="ilan-baslik">' + ilan.baslik + '</p>' +
+            '<p class="ilan-detay">' + ilan.kisaOzet + '</p>' +
+          '</div>' +
+          '<div class="ilan-alt-satir">' +
+            '<p class="ilan-fiyat">' + ilan.fiyat.toLocaleString("tr-TR") + ' ₺</p>' +
+            '<span class="ilan-detay-link">İncele & Galeri →</span>' +
+          '</div>' +
+        '</div>' +
+      '</div>';
+    }
+
+    function tumKartlariCiz() {
+      var anaIzgara = document.getElementById("ana-ilan-izgara");
+      var villaIzgara = document.getElementById("villa-ilan-izgara");
+      var arsaIzgara = document.getElementById("arsa-ilan-izgara");
+
+      anaIzgara.innerHTML = "";
+      villaIzgara.innerHTML = "";
+      arsaIzgara.innerHTML = "";
+
+      tumIlanlar.forEach(function(ilan) {
+        var kart = kartHtmlUret(ilan);
+        anaIzgara.innerHTML += kart;
+        if (ilan.kategori === "villa") villaIzgara.innerHTML += kart;
+        if (ilan.kategori === "arsa") arsaIzgara.innerHTML += kart;
+      });
+    }
+    tumKartlariCiz();
+
+    /* =========================================================================
+       5. İLAN DETAY & ÇOKLU FOTOĞRAF GALERİ KONTROLÜ
+       ========================================================================= */
+    var seciliIlanResimler = [];
+    var seciliFotoIndex = 0;
+
+    function galeriFotoGoster(index) {
+      if (seciliIlanResimler.length === 0) return;
+      seciliFotoIndex = (index + seciliIlanResimler.length) % seciliIlanResimler.length;
+
+      var anaImg = document.getElementById("detay-resim");
+      anaImg.setAttribute("data-hata-adim", "0");
+      anaImg.onerror = function() { resimHataYonet(this); };
+      anaImg.src = seciliIlanResimler[seciliFotoIndex];
+
+      document.getElementById("galeri-sayac").innerText = (seciliFotoIndex + 1) + " / " + seciliIlanResimler.length + " Fotoğraf";
+
+      var kucukler = document.querySelectorAll(".galeri-thumb");
+      kucukler.forEach(function(el, idx) {
+        if (idx === seciliFotoIndex) el.classList.add("aktif");
+        else el.classList.remove("aktif");
+      });
+    }
+
+    function galeriDegistir(yon) {
+      galeriFotoGoster(seciliFotoIndex + yon);
+    }
+
+    function ilanDetayAc(id) {
+      var ilan = tumIlanlar[id];
+      aktifIlanBaslik = ilan.baslik + " (" + ilan.fiyat.toLocaleString("tr-TR") + " ₺)";
+      seciliIlanResimler = ilan.resimler;
+      seciliFotoIndex = 0;
+
+      var kucuklerKutu = document.getElementById("detay-galeri-kucukler");
+      kucuklerKutu.innerHTML = "";
+      seciliIlanResimler.forEach(function(yol, idx) {
+        var img = document.createElement("img");
+        img.className = "galeri-thumb" + (idx === 0 ? " aktif" : "");
+        img.onerror = function() { resimHataYonet(this); };
+        img.src = yol;
+        img.onclick = function() { galeriFotoGoster(idx); };
+        kucuklerKutu.appendChild(img);
+      });
+
+      galeriFotoGoster(0);
+
+      document.getElementById("detay-etiket").innerText = ilan.tur;
+      document.getElementById("detay-baslik").innerText = ilan.baslik;
+      document.getElementById("detay-fiyat").innerText = ilan.fiyat.toLocaleString("tr-TR") + " ₺";
+      document.getElementById("detay-aciklama").innerText = ilan.aciklama;
+      document.getElementById("detay-m2").innerText = ilan.m2 > 0 ? ilan.m2 + " m²" : "Belirtilmemiş";
+      document.getElementById("detay-oda").innerText = ilan.oda;
+      document.getElementById("detay-tapu").innerText = ilan.tapu;
+      document.getElementById("detay-mesafe").innerText = ilan.mesafe;
+      document.getElementById("detay-adres").innerText = ilan.adres;
+
+      var haritaUrl = "https://maps.google.com/maps?q=" + encodeURIComponent(ilan.adres) + "&t=&z=16&ie=UTF8&iwloc=&output=embed";
+      document.getElementById("detay-harita").src = haritaUrl;
+
+      sayfaGoster("ilan-detay-sayfasi");
+    }
+
+    /* =========================================================================
+       6. AKILLI FİLTRELEME & SAYFA GEÇİŞLERİ
+       ========================================================================= */
+    function filtreSayfasiniAc() {
+      sayfaGoster("filtre-sayfasi");
+      akilliFiltrele();
+    }
+
+    function anaSayfaFiltrele(event) {
+      event.preventDefault();
+      var arama = document.getElementById("ana-filtre-metin").value.trim().toLocaleLowerCase("tr-TR");
+      var kategori = document.getElementById("ana-filtre-kategori").value;
+      var fiyatMetni = document.getElementById("ana-filtre-fiyat").value;
+      var enYuksekFiyat = fiyatMetni ? Number(fiyatMetni) : Infinity;
+      var eslesenIlanlar = tumIlanlar.filter(function(ilan) {
+        var ilanMetni = [
+          ilan.baslik,
+          ilan.kisaOzet,
+          ilan.aciklama,
+          ilan.ozellik,
+          ilan.adres,
+          ilan.tur
+        ].join(" ").toLocaleLowerCase("tr-TR");
+        return (!arama || ilanMetni.indexOf(arama) !== -1) &&
+          (!kategori || ilan.kategori === kategori) &&
+          ilan.fiyat <= enYuksekFiyat;
+      });
+
+      document.getElementById("ana-ilan-izgara").innerHTML = eslesenIlanlar.map(function(ilan) {
+        return kartHtmlUret(ilan);
+      }).join("");
+      document.getElementById("ana-filtre-durum").innerText = eslesenIlanlar.length
+        ? eslesenIlanlar.length + " ilan bulundu."
+        : "Bu kriterlere uygun ilan bulunamadı.";
+    }
+
+    function anaSayfaFiltreSifirla() {
+      document.querySelector(".ana-filtre form").reset();
+      document.getElementById("ana-filtre-durum").innerText = "";
+      document.getElementById("ana-ilan-izgara").innerHTML = tumIlanlar.map(function(ilan) {
+        return kartHtmlUret(ilan);
+      }).join("");
+    }
+
+    function filtreSifirla() {
+      document.getElementById("akilli-metin").value = "";
+      document.getElementById("filtre-fiyat").value = "";
+      document.getElementById("filtre-m2").value = "";
+      akilliFiltrele();
+    }
+
+    function akilliFiltrele() {
+      var metin = document.getElementById("akilli-metin").value.toLowerCase();
+      var maxFiyat = Number(document.getElementById("filtre-fiyat").value);
+      var minM2 = Number(document.getElementById("filtre-m2").value);
+      var kelimeler = metin.split(" ").filter(function(k) { return k.length > 2; });
+
+      var puanliListe = tumIlanlar.map(function(ilan) {
+        var puan = 0;
+        var tamMetin = (ilan.baslik + " " + ilan.tur + " " + ilan.ozellik + " " + ilan.aciklama).toLowerCase();
+
+        kelimeler.forEach(function(k) {
+          if (tamMetin.indexOf(k) !== -1) puan += 3;
+        });
+        if ((metin.indexOf("ucuz") !== -1 || metin.indexOf("uygun") !== -1 || metin.indexOf("ekonomik") !== -1) && ilan.fiyat <= 3500000) puan += 2;
+        if ((metin.indexOf("büyük") !== -1 || metin.indexOf("geniş") !== -1) && ilan.m2 >= 180) puan += 2;
+        if (maxFiyat > 0 && ilan.fiyat <= maxFiyat) puan += 2;
+        if (minM2 > 0 && ilan.m2 >= minM2) puan += 2;
+
+        return { ilan: ilan, puan: puan };
+      });
+
+      puanliListe.sort(function(a, b) { return b.puan - a.puan; });
+
+      var filtreGirildiMi = kelimeler.length > 0 || maxFiyat > 0 || minM2 > 0;
+      var gosterilecek = puanliListe.filter(function(x) { return x.puan > 0; });
+      var durum = document.getElementById("filtre-durum");
+
+      if (!filtreGirildiMi) {
+        durum.innerText = "Tüm güncel portföyler listeleniyor (" + tumIlanlar.length + " ilan):";
+        gosterilecek = puanliListe;
+      } else if (gosterilecek.length === 0) {
+        durum.innerText = "Aradığınız kriterlere birebir uyan ilan bulunamadı, size en yakın 3 portföy getirildi:";
+        gosterilecek = puanliListe.slice(0, 3);
+      } else {
+        durum.innerText = "İsteğinize uygun veya en yakın " + gosterilecek.length + " portföy bulundu:";
+      }
+
+      var kutu = document.getElementById("filtre-sonuclar");
+      kutu.innerHTML = "";
+      gosterilecek.forEach(function(item) {
+        kutu.innerHTML += kartHtmlUret(item.ilan);
+      });
+    }
+
+    function yerelYonetimVerisiniKaydet() {
+      try {
+        localStorage.setItem(yerelVeriAnahtari, JSON.stringify({
+          ilanlar: tumIlanlar,
+          site: siteAyarlari
+        }));
+        return true;
+      } catch (error) {
+        console.error("Yerel düzenlemeler kaydedilemedi:", error);
+        var hataAlani = document.getElementById("yerel-veri-hatasi");
+        hataAlani.textContent = "Yerel düzenlemeler kaydedilemedi: " + error.message;
+        hataAlani.style.display = "block";
+        return false;
+      }
+    }
+
+    function siteAyarlariUygula() {
+      document.title = siteAyarlari.siteBaslik;
+      document.getElementById("site-hero-baslik").textContent = siteAyarlari.heroBaslik;
+      document.getElementById("site-hero-aciklama").textContent = siteAyarlari.heroAciklama;
+      document.querySelector('meta[name="description"]').content = siteAyarlari.heroAciklama;
+      document.getElementById("site-email").textContent = siteAyarlari.email;
+      document.getElementById("site-email").href = "mailto:" + siteAyarlari.email;
+      document.getElementById("site-adres").textContent = siteAyarlari.adres;
+
+      var telefonlar = [
+        { id: "site-telefon-1", deger: siteAyarlari.telefon1 },
+        { id: "site-telefon-2", deger: siteAyarlari.telefon2 }
+      ];
+      telefonlar.forEach(function(telefon) {
+        var link = document.getElementById(telefon.id);
+        var rakamlar = telefon.deger.replace(/\D/g, "");
+        var uluslararasi = rakamlar.indexOf("90") === 0
+          ? rakamlar
+          : "90" + (rakamlar.charAt(0) === "0" ? rakamlar.slice(1) : rakamlar);
+        link.textContent = telefon.deger;
+        link.href = "tel:+" + uluslararasi;
+      });
+
+      var whatsappNumara = siteAyarlari.telefon1.replace(/\D/g, "");
+      whatsappNumara = whatsappNumara.indexOf("90") === 0
+        ? whatsappNumara
+        : "90" + (whatsappNumara.charAt(0) === "0" ? whatsappNumara.slice(1) : whatsappNumara);
+      document.getElementById("site-whatsapp").href = "https://wa.me/" + whatsappNumara;
+    }
+
+    function adminPaneliniHazirla() {
+      var secim = document.getElementById("admin-ilan-secimi");
+      secim.textContent = "";
+      tumIlanlar.forEach(function(ilan) {
+        var secenek = document.createElement("option");
+        secenek.value = String(ilan.id);
+        secenek.textContent = ilan.baslik;
+        secim.appendChild(secenek);
+      });
+      adminIlanYukle();
+
+      document.getElementById("admin-site-baslik").value = siteAyarlari.siteBaslik;
+      document.getElementById("admin-hero-baslik").value = siteAyarlari.heroBaslik;
+      document.getElementById("admin-hero-aciklama").value = siteAyarlari.heroAciklama;
+      document.getElementById("admin-site-telefon-1").value = siteAyarlari.telefon1;
+      document.getElementById("admin-site-telefon-2").value = siteAyarlari.telefon2;
+      document.getElementById("admin-site-email").value = siteAyarlari.email;
+      document.getElementById("admin-site-adres").value = siteAyarlari.adres;
+    }
+
+    function siteAyarlariUygula() {
+      document.title = siteAyarlari.siteBaslik;
+      document.querySelector('meta[name="description"]').content = siteAyarlari.heroAciklama;
+      document.querySelector('meta[property="og:title"]').content = siteAyarlari.siteBaslik;
+      document.querySelector('meta[property="og:description"]').content = siteAyarlari.heroAciklama;
+      document.getElementById("site-hero-baslik").textContent = siteAyarlari.heroBaslik;
+      document.getElementById("site-hero-aciklama").textContent = siteAyarlari.heroAciklama;
+      document.getElementById("site-email").textContent = siteAyarlari.email;
+      document.getElementById("site-email").href = "mailto:" + siteAyarlari.email;
+      document.getElementById("site-adres").textContent = siteAyarlari.adres;
+
+      var telefonlar = [
+        { id: "site-telefon-1", deger: siteAyarlari.telefon1 },
+        { id: "site-telefon-2", deger: siteAyarlari.telefon2 }
+      ];
+      telefonlar.forEach(function(telefon) {
+        var link = document.getElementById(telefon.id);
+        var rakamlar = telefon.deger.replace(/\D/g, "");
+        var uluslararasi = rakamlar.indexOf("90") === 0
+          ? rakamlar
+          : "90" + (rakamlar.charAt(0) === "0" ? rakamlar.slice(1) : rakamlar);
+        link.textContent = telefon.deger;
+        link.href = "tel:+" + uluslararasi;
+      });
+
+      var whatsappNumara = siteAyarlari.telefon1.replace(/\D/g, "");
+      whatsappNumara = whatsappNumara.indexOf("90") === 0
+        ? whatsappNumara
+        : "90" + (whatsappNumara.charAt(0) === "0" ? whatsappNumara.slice(1) : whatsappNumara);
+      document.getElementById("site-whatsapp").href = "https://wa.me/" + whatsappNumara;
+    }
+
+    function adminIlanYukle() {
+      var seciliId = Number(document.getElementById("admin-ilan-secimi").value);
+      var ilan = tumIlanlar.find(function(kayit) { return kayit.id === seciliId; });
+      var form = document.getElementById("admin-ilan-form");
+      if (!ilan) {
+        form.reset();
+        return;
+      }
+
+      document.getElementById("admin-ilan-baslik").value = ilan.baslik;
+      document.getElementById("admin-ilan-kategori").value = ilan.kategori;
+      document.getElementById("admin-ilan-tur").value = ilan.tur;
+      document.getElementById("admin-ilan-fiyat").value = ilan.fiyat;
+      document.getElementById("admin-ilan-m2").value = ilan.m2;
+      document.getElementById("admin-ilan-ozet").value = ilan.kisaOzet;
+      document.getElementById("admin-ilan-aciklama").value = ilan.aciklama;
+      document.getElementById("admin-ilan-oda").value = ilan.oda;
+      document.getElementById("admin-ilan-tapu").value = ilan.tapu;
+      document.getElementById("admin-ilan-mesafe").value = ilan.mesafe;
+      document.getElementById("admin-ilan-adres").value = ilan.adres;
+      document.getElementById("admin-ilan-ozellik").value = ilan.ozellik;
+      document.getElementById("admin-ilan-resimler").value = ilan.resimler.join("\n");
+    }
+
+    function adminYeniIlanEkle() {
+      var yeniId = tumIlanlar.reduce(function(enBuyuk, ilan) {
+        return Math.max(enBuyuk, ilan.id);
+      }, -1) + 1;
+      tumIlanlar.push({
+        id: yeniId,
+        kategori: "villa",
+        baslik: "Yeni portföy ilanı",
+        kisaOzet: "",
+        tur: "SATILIK VİLLA",
+        fiyat: 0,
+        m2: 0,
+        oda: "",
+        tapu: "",
+        mesafe: "",
+        adres: "",
+        aciklama: "",
+        ozellik: "",
+        resimler: ["villa.1/1.jpeg"]
+      });
+      adminPaneliniHazirla();
+      document.getElementById("admin-ilan-secimi").value = String(yeniId);
+      adminIlanYukle();
+      document.getElementById("admin-ilan-durum").textContent = "Yeni ilanı doldurun ve kaydedin.";
+    }
+
+    function adminIlanKaydet(event) {
+      event.preventDefault();
+      var seciliId = Number(document.getElementById("admin-ilan-secimi").value);
+      var ilan = tumIlanlar.find(function(kayit) { return kayit.id === seciliId; });
+      var durum = document.getElementById("admin-ilan-durum");
+      if (!ilan) {
+        durum.textContent = "Kaydedilecek ilan bulunamadı.";
+        return;
+      }
+
+      var resimler = document.getElementById("admin-ilan-resimler").value
+        .split(/\r?\n/)
+        .map(function(yol) { return yol.trim(); })
+        .filter(function(yol) { return yol.length > 0; });
+      if (!resimler.length) {
+        durum.textContent = "En az bir fotoğraf yolu girin.";
+        return;
+      }
+
+      var oncekiIlan = JSON.parse(JSON.stringify(ilan));
+      ilan.baslik = document.getElementById("admin-ilan-baslik").value.trim();
+      ilan.kategori = document.getElementById("admin-ilan-kategori").value;
+      ilan.tur = document.getElementById("admin-ilan-tur").value.trim();
+      ilan.fiyat = Number(document.getElementById("admin-ilan-fiyat").value);
+      ilan.m2 = Number(document.getElementById("admin-ilan-m2").value);
+      ilan.kisaOzet = document.getElementById("admin-ilan-ozet").value.trim();
+      ilan.aciklama = document.getElementById("admin-ilan-aciklama").value.trim();
+      ilan.oda = document.getElementById("admin-ilan-oda").value.trim();
+      ilan.tapu = document.getElementById("admin-ilan-tapu").value.trim();
+      ilan.mesafe = document.getElementById("admin-ilan-mesafe").value.trim();
+      ilan.adres = document.getElementById("admin-ilan-adres").value.trim();
+      ilan.ozellik = document.getElementById("admin-ilan-ozellik").value.trim();
+      ilan.resimler = resimler;
+
+      if (!yerelYonetimVerisiniKaydet()) {
+        Object.assign(ilan, oncekiIlan);
+        return;
+      }
+      tumKartlariCiz();
+      adminPaneliniHazirla();
+      document.getElementById("admin-ilan-secimi").value = String(seciliId);
+      adminIlanYukle();
+      durum.textContent = "İlan bu tarayıcıya kaydedildi. Müşterilerin cihazlarına aktarılmaz.";
+    }
+
+    function adminIlanSil() {
+      var seciliId = Number(document.getElementById("admin-ilan-secimi").value);
+      var ilan = tumIlanlar.find(function(kayit) { return kayit.id === seciliId; });
+      if (!ilan) return;
+      if (!confirm('"' + ilan.baslik + '" ilanını bu tarayıcıdan silmek istiyor musunuz?')) return;
+
+      var oncekiIlanlar = tumIlanlar.slice();
+      tumIlanlar = tumIlanlar.filter(function(kayit) { return kayit.id !== seciliId; });
+      if (!yerelYonetimVerisiniKaydet()) {
+        tumIlanlar = oncekiIlanlar;
+        return;
+      }
+      tumKartlariCiz();
+      adminPaneliniHazirla();
+      document.getElementById("admin-ilan-durum").textContent = "İlan bu tarayıcıdan silindi.";
+    }
+
+    function adminSiteBilgileriniKaydet(event) {
+      event.preventDefault();
+      var oncekiAyarlar = Object.assign({}, siteAyarlari);
+      siteAyarlari = {
+        siteBaslik: document.getElementById("admin-site-baslik").value.trim(),
+        heroBaslik: document.getElementById("admin-hero-baslik").value.trim(),
+        heroAciklama: document.getElementById("admin-hero-aciklama").value.trim(),
+        telefon1: document.getElementById("admin-site-telefon-1").value.trim(),
+        telefon2: document.getElementById("admin-site-telefon-2").value.trim(),
+        email: document.getElementById("admin-site-email").value.trim(),
+        adres: document.getElementById("admin-site-adres").value.trim()
+      };
+      if (!yerelYonetimVerisiniKaydet()) {
+        siteAyarlari = oncekiAyarlar;
+        return;
+      }
+      siteAyarlariUygula();
+      document.getElementById("admin-site-durum").textContent = "Site bilgileri bu tarayıcıya kaydedildi.";
+    }
+
+    function adminYerelDegisiklikleriSifirla() {
+      if (!confirm("Bu tarayıcıdaki yerel site düzenlemeleri silinsin mi?")) return;
+      try {
+        localStorage.removeItem(yerelVeriAnahtari);
+        window.location.reload();
+      } catch (error) {
+        console.error("Yerel düzenlemeler silinemedi:", error);
+        var hataAlani = document.getElementById("yerel-veri-hatasi");
+        hataAlani.textContent = "Yerel düzenlemeler silinemedi: " + error.message;
+        hataAlani.style.display = "block";
+      }
+    }
+
+    function tumSayfalariGizle() {
+      document.getElementById("ana-sayfa").style.display = "none";
+      document.getElementById("villalar-sayfasi").style.display = "none";
+      document.getElementById("arsalar-sayfasi").style.display = "none";
+      document.getElementById("hakkimizda-sayfasi").style.display = "none";
+      document.getElementById("iletisim-sayfasi").style.display = "none";
+      document.getElementById("filtre-sayfasi").style.display = "none";
+      document.getElementById("ilan-detay-sayfasi").style.display = "none";
+      document.getElementById("admin-sayfasi").style.display = "none";
+    }
+
+    function sayfaGoster(sayfaAdi) {
+      tumSayfalariGizle();
+      document.getElementById(sayfaAdi).style.display = "block";
+      var nav = document.querySelector("nav");
+      var menuDugmesi = document.querySelector(".nav-menu-toggle");
+      nav.classList.remove("menu-acik");
+      menuDugmesi.setAttribute("aria-expanded", "false");
+      menuDugmesi.setAttribute("aria-label", "Menüyü aç");
+      menuDugmesi.textContent = "☰";
+      window.scrollTo(0, 0);
+    }
+
+    function mobilMenuDegistir() {
+      var nav = document.querySelector("nav");
+      var menuDugmesi = document.querySelector(".nav-menu-toggle");
+      var acik = nav.classList.toggle("menu-acik");
+      menuDugmesi.setAttribute("aria-expanded", String(acik));
+      menuDugmesi.setAttribute("aria-label", acik ? "Menüyü kapat" : "Menüyü aç");
+      menuDugmesi.textContent = acik ? "×" : "☰";
+    }
+
+    function formGonder(event) {
+      event.preventDefault();
+      document.getElementById("form-bilgi").style.display = "block";
+    }
+
+    siteAyarlariUygula();
+    if (new URLSearchParams(window.location.search).get("yonetim") === "1") {
+      adminPaneliniHazirla();
+      sayfaGoster("admin-sayfasi");
+    }
+  </script>
+
+</body>
+</html>
